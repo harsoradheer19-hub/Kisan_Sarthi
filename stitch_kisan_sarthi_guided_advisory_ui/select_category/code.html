@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Select Problem Category</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#734e00",
+                        "primary-container": "#2e7d32",
+                        "outline-variant": "#bfcaba",
+                        "on-secondary-container": "#5b675e",
+                        "surface-container": "#eeeeee",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#1b6d24",
+                        "on-tertiary-fixed": "#281900",
+                        "tertiary-fixed-dim": "#ffba38",
+                        "secondary-fixed-dim": "#bdcabe",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#926500",
+                        "primary-fixed-dim": "#88d982",
+                        "on-secondary-fixed": "#131e17",
+                        "on-primary-fixed": "#002204",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e8e8e8",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d9e6da",
+                        "on-secondary-fixed-variant": "#3e4a41",
+                        "primary": "#0d631b",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#d9e6da",
+                        "inverse-primary": "#88d982",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#556158",
+                        "on-tertiary-fixed-variant": "#604100",
+                        "surface-bright": "#f9f9f9",
+                        "on-surface-variant": "#40493d",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#a3f69c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdeac",
+                        "inverse-surface": "#2f3131",
+                        "outline": "#707a6c",
+                        "on-tertiary-container": "#ffefda",
+                        "on-primary-container": "#cbffc2",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "lg": "24px",
+                        "xl": "32px",
+                        "sm": "12px",
+                        "touch-target": "48px",
+                        "margin-mobile": "16px",
+                        "md": "16px",
+                        "xs": "8px",
+                        "gutter-mobile": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .icon-stroke {
+            stroke-width: 2px;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-safe font-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-margin-mobile h-touch-target sticky top-0 z-50 bg-surface dark:bg-background docked full-width top-0">
+<button aria-label="Back" class="h-touch-target w-touch-target flex items-center justify-start text-primary dark:text-primary-fixed transition-transform duration-200 active:scale-95 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<div class="flex-1 text-center">
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">Namaste, Farmer</h1>
+</div>
+<div class="h-touch-target w-touch-target flex items-center justify-end">
+<!-- Placeholder for Avatar -->
+<div class="w-8 h-8 rounded-full bg-surface-container-highest overflow-hidden border border-outline-variant">
+<img alt="Farmer Profile Avatar" class="w-full h-full object-cover" data-alt="A close up portrait photo of a friendly Indian farmer smiling warmly in a bright sunlit field, wearing traditional casual clothing in earth tones. Professional high quality photography, soft natural lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHcc19n4KvaMNGqj_qzLEOWHtekhBBDXcygKeuHxDy7YpzbVyQSLmgPPKqKEYFVhA3OdjV4Wy07qxwnWxl0xCX1tRDMrFKe2kmu_Xd-y_Ly3GQTT34Lfe3SHQt65c63VND99jOOe3t2q2I4h__YS95dNUXvRSlnEOnIYJRPgTSBAG4X8jKtRn4Q9ZtzLfiZjSA_y3bRFOLo_JB3QAeeuFCB2jITzpiBWUkVPQ9PtBoRCRmCF8j6HS7"/>
+</div>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="px-margin-mobile pt-lg pb-32 max-w-3xl mx-auto">
+<div class="mb-xl text-center">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-sm">What problem are you facing?</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Select a category below to get tailored advice.</p>
+</div>
+<!-- Problem Categories Bento Grid -->
+<div class="grid grid-cols-2 md:grid-cols-3 gap-md">
+<!-- Category Card 1 -->
+<button class="group flex flex-col items-center justify-center p-xl rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-primary focus:border-primary transition-all duration-200 shadow-[0_2px_10px_rgba(46,125,50,0.05)] hover:shadow-[0_4px_15px_rgba(46,125,50,0.1)] active:scale-95 w-full">
+<div class="w-16 h-16 rounded-full bg-error-container text-on-error-container flex items-center justify-center mb-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-200">
+<span class="material-symbols-outlined text-3xl" data-icon="pest_control">pest_control</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Pest Problem</span>
+</button>
+<!-- Category Card 2 -->
+<button class="group flex flex-col items-center justify-center p-xl rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-primary focus:border-primary transition-all duration-200 shadow-[0_2px_10px_rgba(46,125,50,0.05)] hover:shadow-[0_4px_15px_rgba(46,125,50,0.1)] active:scale-95 w-full">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center mb-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-200">
+<span class="material-symbols-outlined text-3xl" data-icon="eco">eco</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Leaf / Plant Problem</span>
+</button>
+<!-- Category Card 3 -->
+<button class="group flex flex-col items-center justify-center p-xl rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-primary focus:border-primary transition-all duration-200 shadow-[0_2px_10px_rgba(46,125,50,0.05)] hover:shadow-[0_4px_15px_rgba(46,125,50,0.1)] active:scale-95 w-full">
+<div class="w-16 h-16 rounded-full bg-[#e0f2fe] text-[#0369a1] flex items-center justify-center mb-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-200">
+<span class="material-symbols-outlined text-3xl" data-icon="water_drop">water_drop</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Water Problem</span>
+</button>
+<!-- Category Card 4 -->
+<button class="group flex flex-col items-center justify-center p-xl rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-primary focus:border-primary transition-all duration-200 shadow-[0_2px_10px_rgba(46,125,50,0.05)] hover:shadow-[0_4px_15px_rgba(46,125,50,0.1)] active:scale-95 w-full">
+<div class="w-16 h-16 rounded-full bg-tertiary-fixed text-on-tertiary-fixed flex items-center justify-center mb-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-200">
+<span class="material-symbols-outlined text-3xl" data-icon="grass">grass</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Growth Problem</span>
+</button>
+<!-- Category Card 5 -->
+<button class="group flex flex-col items-center justify-center p-xl rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-primary focus:border-primary transition-all duration-200 shadow-[0_2px_10px_rgba(46,125,50,0.05)] hover:shadow-[0_4px_15px_rgba(46,125,50,0.1)] active:scale-95 w-full">
+<div class="w-16 h-16 rounded-full bg-[#fce7f3] text-[#be185d] flex items-center justify-center mb-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-200">
+<span class="material-symbols-outlined text-3xl" data-icon="coronavirus">coronavirus</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Disease Symptoms</span>
+</button>
+<!-- Category Card 6 -->
+<button class="group flex flex-col items-center justify-center p-xl rounded-xl bg-surface-container-lowest border border-outline-variant hover:border-primary focus:border-primary transition-all duration-200 shadow-[0_2px_10px_rgba(46,125,50,0.05)] hover:shadow-[0_4px_15px_rgba(46,125,50,0.1)] active:scale-95 w-full md:col-start-2">
+<div class="w-16 h-16 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center mb-md group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors duration-200">
+<span class="material-symbols-outlined text-3xl" data-icon="help">help</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Other</span>
+</button>
+</div>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-xs pb-safe bg-surface dark:bg-surface-container shadow-[0_-2px_10px_rgba(0,0,0,0.05)] docked full-width bottom-0 rounded-t-xl md:hidden">
+<!-- Inactive: Home -->
+<a aria-label="Home" class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant transition-all duration-300 ease-in-out active:scale-90 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="home">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<!-- Active: Advisory -->
+<a aria-current="page" aria-label="Advisory" class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-lg py-xs hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant transition-all duration-300 ease-in-out active:scale-90" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="psychology" data-weight="fill" style="font-variation-settings: 'FILL' 1;">psychology</span>
+<span class="font-label-sm text-label-sm font-bold">Advisory</span>
+</a>
+<!-- Inactive: Requests -->
+<a aria-label="Requests" class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant transition-all duration-300 ease-in-out active:scale-90 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-label-sm text-label-sm">Requests</span>
+</a>
+<!-- Inactive: Profile -->
+<a aria-label="Profile" class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant transition-all duration-300 ease-in-out active:scale-90 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-1" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+</nav>
+</body></html>

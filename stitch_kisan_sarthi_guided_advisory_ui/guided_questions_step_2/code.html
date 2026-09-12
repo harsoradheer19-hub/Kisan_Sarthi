@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+
+<html class="h-full" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Guided Questions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#734e00",
+                        "primary-container": "#2e7d32",
+                        "outline-variant": "#bfcaba",
+                        "on-secondary-container": "#5b675e",
+                        "surface-container": "#eeeeee",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#1b6d24",
+                        "on-tertiary-fixed": "#281900",
+                        "tertiary-fixed-dim": "#ffba38",
+                        "secondary-fixed-dim": "#bdcabe",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#926500",
+                        "primary-fixed-dim": "#88d982",
+                        "on-secondary-fixed": "#131e17",
+                        "on-primary-fixed": "#002204",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e8e8e8",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d9e6da",
+                        "on-secondary-fixed-variant": "#3e4a41",
+                        "primary": "#0d631b",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#d9e6da",
+                        "inverse-primary": "#88d982",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#556158",
+                        "on-tertiary-fixed-variant": "#604100",
+                        "surface-bright": "#f9f9f9",
+                        "on-surface-variant": "#40493d",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#a3f69c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdeac",
+                        "inverse-surface": "#2f3131",
+                        "outline": "#707a6c",
+                        "on-tertiary-container": "#ffefda",
+                        "on-primary-container": "#cbffc2",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "lg": "24px",
+                        "xl": "32px",
+                        "sm": "12px",
+                        "touch-target": "48px",
+                        "margin-mobile": "16px",
+                        "md": "16px",
+                        "xs": "8px",
+                        "gutter-mobile": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background font-body-md h-full flex flex-col">
+<!-- Top App Bar (Modified for transactional flow - back button focus) -->
+<header class="flex justify-between items-center w-full px-margin-mobile h-[64px] sticky top-0 z-50 bg-surface text-primary border-b border-surface-variant">
+<button aria-label="Go back" class="flex items-center justify-center w-touch-target h-touch-target text-on-surface hover:bg-surface-container rounded-full transition-colors">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+</button>
+<span class="font-headline-sm text-headline-sm text-on-surface">Advisory Flow</span>
+<div class="w-touch-target h-touch-target"></div> <!-- Spacer for centering -->
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-1 flex flex-col px-margin-mobile py-lg overflow-y-auto w-full max-w-2xl mx-auto">
+<!-- Progress Indicator -->
+<div class="mb-xl w-full">
+<div class="flex justify-between items-center mb-xs">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">Question 2 of 5</span>
+<span class="font-label-sm text-label-sm text-primary font-medium">40%</span>
+</div>
+<div class="w-full h-2 bg-surface-container-high rounded-full overflow-hidden">
+<div class="h-full bg-primary rounded-full transition-all duration-500 ease-out" style="width: 40%"></div>
+</div>
+</div>
+<!-- Question Header -->
+<div class="mb-xl">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-sm">What symptom are you seeing?</h1>
+<p class="font-body-md text-body-md text-on-surface-variant">Select the option that best describes the issue with your crop.</p>
+</div>
+<!-- Selection Options (Bento Grid Style) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md mb-xl flex-1 content-start">
+<!-- Option 1: Selected State -->
+<label class="relative flex flex-col items-start p-md bg-secondary-container border-2 border-primary rounded-xl cursor-pointer shadow-sm hover:shadow-md transition-shadow">
+<input checked="" class="peer sr-only" name="symptom" type="radio" value="yellow_leaves"/>
+<div class="flex items-center justify-between w-full mb-sm">
+<div class="w-[40px] h-[40px] rounded-full bg-primary-container flex items-center justify-center text-on-primary-container">
+<span class="material-symbols-outlined" data-icon="eco">eco</span>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-primary bg-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[16px] text-on-primary font-bold" data-icon="check">check</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mb-xs">Yellow leaves</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Leaves are turning pale or yellow, starting from the edges.</span>
+</label>
+<!-- Option 2 -->
+<label class="relative flex flex-col items-start p-md bg-surface-container-lowest border border-surface-variant rounded-xl cursor-pointer shadow-sm hover:shadow-md hover:border-outline-variant transition-all">
+<input class="peer sr-only" name="symptom" type="radio" value="spots_leaves"/>
+<div class="flex items-center justify-between w-full mb-sm">
+<div class="w-[40px] h-[40px] rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="grain">grain</span>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px] text-transparent peer-checked:text-on-primary font-bold transition-colors" data-icon="check">check</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mb-xs">Spots on leaves</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Brown, black, or white spots appearing on foliage.</span>
+</label>
+<!-- Option 3 -->
+<label class="relative flex flex-col items-start p-md bg-surface-container-lowest border border-surface-variant rounded-xl cursor-pointer shadow-sm hover:shadow-md hover:border-outline-variant transition-all">
+<input class="peer sr-only" name="symptom" type="radio" value="wilting"/>
+<div class="flex items-center justify-between w-full mb-sm">
+<div class="w-[40px] h-[40px] rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="water_drop">water_drop</span>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px] text-transparent peer-checked:text-on-primary font-bold transition-colors" data-icon="check">check</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mb-xs">Wilting</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Plant looks droopy despite adequate watering.</span>
+</label>
+<!-- Option 4 -->
+<label class="relative flex flex-col items-start p-md bg-surface-container-lowest border border-surface-variant rounded-xl cursor-pointer shadow-sm hover:shadow-md hover:border-outline-variant transition-all">
+<input class="peer sr-only" name="symptom" type="radio" value="insects"/>
+<div class="flex items-center justify-between w-full mb-sm">
+<div class="w-[40px] h-[40px] rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="pest_control">pest_control</span>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px] text-transparent peer-checked:text-on-primary font-bold transition-colors" data-icon="check">check</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mb-xs">Insects visible</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Visible pests on stems, leaves, or soil surface.</span>
+</label>
+<!-- Option 5 -->
+<label class="relative flex flex-col items-start p-md bg-surface-container-lowest border border-surface-variant rounded-xl cursor-pointer shadow-sm hover:shadow-md hover:border-outline-variant transition-all md:col-span-2">
+<input class="peer sr-only" name="symptom" type="radio" value="slow_growth"/>
+<div class="flex items-center justify-between w-full mb-sm">
+<div class="w-[40px] h-[40px] rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant">
+<span class="material-symbols-outlined" data-icon="trending_down">trending_down</span>
+</div>
+<div class="w-6 h-6 rounded-full border-2 border-outline-variant peer-checked:border-primary peer-checked:bg-primary flex items-center justify-center transition-colors">
+<span class="material-symbols-outlined text-[16px] text-transparent peer-checked:text-on-primary font-bold transition-colors" data-icon="check">check</span>
+</div>
+</div>
+<span class="font-headline-sm text-headline-sm text-on-surface mb-xs">Slow growth</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Stunted development compared to normal growth rates.</span>
+</label>
+</div>
+<!-- Bottom Actions (Sticky) -->
+<div class="sticky bottom-0 left-0 w-full bg-surface pt-md pb-lg mt-auto border-t border-surface-variant flex gap-md">
+<button class="flex-1 flex items-center justify-center h-touch-target rounded-full bg-surface-container-high text-on-surface font-label-lg text-label-lg hover:bg-surface-variant transition-colors shadow-sm">
+                Back
+            </button>
+<button class="flex-[2] flex items-center justify-center h-touch-target rounded-full bg-primary text-on-primary font-label-lg text-label-lg hover:bg-surface-tint transition-colors shadow-md active:scale-95">
+                Next Step
+                <span class="material-symbols-outlined ml-xs text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</main>
+<script>
+        // Simple script to handle visual state updates for the radio buttons
+        document.addEventListener('DOMContentLoaded', () => {
+            const radioInputs = document.querySelectorAll('input[type="radio"][name="symptom"]');
+            
+            radioInputs.forEach(input => {
+                input.addEventListener('change', (e) => {
+                    // Reset all labels
+                    document.querySelectorAll('label').forEach(label => {
+                        label.classList.remove('bg-secondary-container', 'border-primary', 'border-2');
+                        label.classList.add('bg-surface-container-lowest', 'border-surface-variant', 'border');
+                        
+                        // Reset icon background
+                        const iconContainer = label.querySelector('div.w-\\[40px\\]');
+                        if(iconContainer) {
+                            iconContainer.classList.remove('bg-primary-container', 'text-on-primary-container');
+                            iconContainer.classList.add('bg-surface-container', 'text-on-surface-variant');
+                        }
+                    });
+
+                    // Set active state on parent label
+                    if (e.target.checked) {
+                        const activeLabel = e.target.closest('label');
+                        activeLabel.classList.remove('bg-surface-container-lowest', 'border-surface-variant', 'border');
+                        activeLabel.classList.add('bg-secondary-container', 'border-primary', 'border-2');
+                        
+                        // Set active icon background
+                        const activeIconContainer = activeLabel.querySelector('div.w-\\[40px\\]');
+                        if(activeIconContainer) {
+                            activeIconContainer.classList.remove('bg-surface-container', 'text-on-surface-variant');
+                            activeIconContainer.classList.add('bg-primary-container', 'text-on-primary-container');
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body></html>

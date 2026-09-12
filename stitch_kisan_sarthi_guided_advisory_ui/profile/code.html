@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Farmer Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "tertiary": "#734e00",
+                      "primary-container": "#2e7d32",
+                      "outline-variant": "#bfcaba",
+                      "on-secondary-container": "#5b675e",
+                      "surface-container": "#eeeeee",
+                      "on-primary": "#ffffff",
+                      "surface-tint": "#1b6d24",
+                      "on-tertiary-fixed": "#281900",
+                      "tertiary-fixed-dim": "#ffba38",
+                      "secondary-fixed-dim": "#bdcabe",
+                      "on-surface": "#1a1c1c",
+                      "tertiary-container": "#926500",
+                      "primary-fixed-dim": "#88d982",
+                      "on-secondary-fixed": "#131e17",
+                      "on-primary-fixed": "#002204",
+                      "surface-container-low": "#f3f3f3",
+                      "surface-container-lowest": "#ffffff",
+                      "surface": "#f9f9f9",
+                      "background": "#f9f9f9",
+                      "on-error-container": "#93000a",
+                      "surface-container-high": "#e8e8e8",
+                      "on-error": "#ffffff",
+                      "secondary-container": "#d9e6da",
+                      "on-secondary-fixed-variant": "#3e4a41",
+                      "primary": "#0d631b",
+                      "on-background": "#1a1c1c",
+                      "secondary-fixed": "#d9e6da",
+                      "inverse-primary": "#88d982",
+                      "inverse-on-surface": "#f0f1f1",
+                      "on-primary-fixed-variant": "#005312",
+                      "on-secondary": "#ffffff",
+                      "secondary": "#556158",
+                      "on-tertiary-fixed-variant": "#604100",
+                      "surface-bright": "#f9f9f9",
+                      "on-surface-variant": "#40493d",
+                      "surface-variant": "#e2e2e2",
+                      "surface-container-highest": "#e2e2e2",
+                      "surface-dim": "#dadada",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#a3f69c",
+                      "error": "#ba1a1a",
+                      "tertiary-fixed": "#ffdeac",
+                      "inverse-surface": "#2f3131",
+                      "outline": "#707a6c",
+                      "on-tertiary-container": "#ffefda",
+                      "on-primary-container": "#cbffc2",
+                      "on-tertiary": "#ffffff"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "base": "4px",
+                      "lg": "24px",
+                      "xl": "32px",
+                      "sm": "12px",
+                      "touch-target": "48px",
+                      "margin-mobile": "16px",
+                      "md": "16px",
+                      "xs": "8px",
+                      "gutter-mobile": "12px"
+              },
+              "fontFamily": {
+                      "headline-lg-mobile": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "headline-lg": ["Inter"],
+                      "label-lg": ["Inter"],
+                      "label-sm": ["Inter"],
+                      "body-md": ["Inter"],
+                      "headline-sm": ["Inter"],
+                      "body-lg": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                      "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                      "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                      "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                      "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+              }
+            }
+          }
+        }
+    </script>
+<style>
+        /* Custom base styles ensuring a solid background */
+        body {
+            background-color: #f9f9f9;
+            color: #1a1c1c;
+            -webkit-tap-highlight-color: transparent;
+        }
+        /* Mobile safe area for bottom nav */
+        .pb-safe { padding-bottom: env(safe-area-inset-bottom, 20px); }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="antialiased min-h-screen flex flex-col pb-[90px]">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-margin-mobile h-touch-target sticky top-0 z-50 bg-surface dark:bg-background text-primary dark:text-primary-fixed font-headline-sm text-headline-sm flat no shadows">
+<div class="flex items-center gap-xs">
+<button class="transition-transform duration-200 active:scale-95 hover:bg-surface-container dark:hover:bg-surface-container-high p-xs rounded-full flex items-center justify-center h-touch-target w-touch-target text-on-surface-variant dark:text-on-surface-variant">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+<span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Namaste, Farmer</span>
+</div>
+<div class="h-10 w-10 rounded-full overflow-hidden border-2 border-outline-variant flex-shrink-0 cursor-pointer hover:bg-surface-container transition-all">
+<img alt="Farmer Profile Avatar" class="w-full h-full object-cover" data-alt="A close-up portrait of a friendly farmer with a sun-weathered face, wearing a simple straw hat and a light cotton shirt. The background is a gently blurred, sunlit green field. The lighting is bright, natural, and modern, reflecting an optimistic and trustworthy human-centric agricultural aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqZjha2y-pti9m9CIaJTZLKWQyFGYO79dryLsCKFZZ6ANd4TMKFUfJJ-exG0BeTO1JEBrKNNudx2wSrU33JPP3GzNzK5XLhtoQS4GvcnigC4gQftUuwl1-l5WSAs5qzsHJM42m86LqqBN5iz4enq1raqCGpDfWauoIXkf285BfkDD7Nw92oRlVaR5MJUAZOwOo64B8LLr-LtuBIIfQsi04XA63xnLVhtVnz88OizpUHzH9CU11zXZ9"/>
+</div>
+</header>
+<!-- Main Canvas -->
+<main class="flex-grow px-margin-mobile flex flex-col gap-lg mt-md max-w-2xl mx-auto w-full">
+<!-- Profile Header Section -->
+<section class="bg-surface-container-lowest rounded-[16px] p-[16px] shadow-[0_4px_16px_rgba(46,125,50,0.05)] flex items-center gap-md">
+<div class="h-[80px] w-[80px] rounded-full overflow-hidden border-4 border-secondary-container flex-shrink-0 relative">
+<img alt="Farmer Avatar Large" class="w-full h-full object-cover" data-alt="A close-up portrait of a friendly farmer with a sun-weathered face, wearing a simple straw hat and a light cotton shirt. The background is a gently blurred, sunlit green field. The lighting is bright, natural, and modern, reflecting an optimistic and trustworthy human-centric agricultural aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Wx62LZlO0A___G-H6gQKzvSwseIxVSMuDYZCfud-i12AI0Mg0Z8CAdEKyVjJabuMLt7V2qanEQ1G4wj3PIX6XSKXaauafbjrx05u541-WzPzffBXY6Ya6Yvi7SfWV9G6hOwKK_B3haJZqcjObk4pXgbWBmpwjjzaBDPFNShdICQv7Fuzg1AMqjDtBODBhBZEt2HdZp1Hqe4dd3LNN7LWTtwiLVuhHHDDU3_RiHslKT0aW8IEIQU1"/>
+<button class="absolute bottom-0 right-0 bg-primary-container text-on-primary-container rounded-full p-[4px] shadow-sm flex items-center justify-center transform translate-x-1 translate-y-1">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">edit</span>
+</button>
+</div>
+<div class="flex flex-col">
+<h1 class="font-headline-sm text-headline-sm text-on-surface">Ramesh Kumar</h1>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-[4px] mt-base">
+<span class="material-symbols-outlined text-[16px]">call</span> +91 98765 43210
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant flex items-center gap-[4px] mt-[2px]">
+<span class="material-symbols-outlined text-[16px]">location_on</span> Punjab, India
+                </p>
+</div>
+</section>
+<!-- Activities Section -->
+<section class="flex flex-col gap-sm">
+<h2 class="font-label-lg text-label-lg text-primary uppercase tracking-wider ml-[4px]">My Activities</h2>
+<div class="grid grid-cols-2 gap-sm">
+<!-- My Advisories -->
+<a class="bg-surface-container-lowest rounded-[16px] p-[16px] shadow-[0_4px_16px_rgba(46,125,50,0.05)] flex flex-col justify-between h-[120px] hover:bg-surface-container-low transition-colors duration-200 active:scale-95 group cursor-pointer relative overflow-hidden" href="#">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-secondary-container rounded-full opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
+<div class="bg-primary-container text-on-primary-container h-10 w-10 rounded-full flex items-center justify-center relative z-10">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">psychology</span>
+</div>
+<div class="relative z-10">
+<span class="font-label-lg text-label-lg text-on-surface block">My Advisories</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-[2px] block">3 Active</span>
+</div>
+</a>
+<!-- My Requests -->
+<a class="bg-surface-container-lowest rounded-[16px] p-[16px] shadow-[0_4px_16px_rgba(46,125,50,0.05)] flex flex-col justify-between h-[120px] hover:bg-surface-container-low transition-colors duration-200 active:scale-95 group cursor-pointer relative overflow-hidden" href="#">
+<div class="absolute -right-4 -top-4 w-24 h-24 bg-tertiary-fixed rounded-full opacity-50 group-hover:scale-110 transition-transform duration-500"></div>
+<div class="bg-tertiary-container text-on-tertiary-container h-10 w-10 rounded-full flex items-center justify-center relative z-10">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+</div>
+<div class="relative z-10">
+<span class="font-label-lg text-label-lg text-on-surface block">My Requests</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-[2px] block">1 Pending</span>
+</div>
+</a>
+</div>
+</section>
+<!-- Settings List Section -->
+<section class="bg-surface-container-lowest rounded-[16px] shadow-[0_4px_16px_rgba(46,125,50,0.05)] overflow-hidden flex flex-col">
+<h2 class="font-label-lg text-label-lg text-primary uppercase tracking-wider px-[16px] pt-[16px] pb-[8px]">Settings &amp; Preferences</h2>
+<button class="w-full flex items-center justify-between px-[16px] py-[16px] hover:bg-surface-container-low transition-colors active:bg-surface-container border-b border-surface-container-high group">
+<div class="flex items-center gap-md">
+<div class="h-10 w-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined">translate</span>
+</div>
+<div class="text-left flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Language</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">English (UK)</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between px-[16px] py-[16px] hover:bg-surface-container-low transition-colors active:bg-surface-container group">
+<div class="flex items-center gap-md">
+<div class="h-10 w-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined">notifications</span>
+</div>
+<div class="text-left flex flex-col">
+<span class="font-body-md text-body-md text-on-surface font-medium">Notifications</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Weather &amp; Alerts on</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</button>
+</section>
+<!-- About Section -->
+<section class="bg-surface-container-lowest rounded-[16px] shadow-[0_4px_16px_rgba(46,125,50,0.05)] overflow-hidden flex flex-col">
+<h2 class="font-label-lg text-label-lg text-primary uppercase tracking-wider px-[16px] pt-[16px] pb-[8px]">About</h2>
+<button class="w-full flex items-center justify-between px-[16px] py-[16px] hover:bg-surface-container-low transition-colors active:bg-surface-container border-b border-surface-container-high group">
+<div class="flex items-center gap-md">
+<div class="h-10 w-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined">help</span>
+</div>
+<div class="text-left">
+<span class="font-body-md text-body-md text-on-surface font-medium">Help &amp; Support</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</button>
+<button class="w-full flex items-center justify-between px-[16px] py-[16px] hover:bg-surface-container-low transition-colors active:bg-surface-container group">
+<div class="flex items-center gap-md">
+<div class="h-10 w-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:text-primary transition-colors">
+<span class="material-symbols-outlined">info</span>
+</div>
+<div class="text-left">
+<span class="font-body-md text-body-md text-on-surface font-medium">About Kisan Sarthi</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant">chevron_right</span>
+</button>
+</section>
+<!-- Logout Button -->
+<div class="mt-md mb-xl">
+<button class="w-full min-h-touch-target rounded-full border-2 border-error text-error font-label-lg text-label-lg flex items-center justify-center gap-xs hover:bg-error-container hover:text-on-error-container transition-all active:scale-[0.98]">
+<span class="material-symbols-outlined text-[20px]">logout</span>
+                Logout
+            </button>
+</div>
+</main>
+<!-- BottomNavBar (Only rendered on top-level destination mobile) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-xs pb-safe bg-surface dark:bg-surface-container shadow-[0_-2px_10px_rgba(0,0,0,0.05)] docked full-width rounded-t-xl transition-all duration-300 ease-in-out">
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant transition-all duration-300 ease-in-out active:scale-90 rounded-full" href="#">
+<span class="material-symbols-outlined text-[24px]">home</span>
+<span class="font-label-sm text-label-sm mt-base">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant transition-all duration-300 ease-in-out active:scale-90 rounded-full" href="#">
+<span class="material-symbols-outlined text-[24px]">psychology</span>
+<span class="font-label-sm text-label-sm mt-base">Advisory</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant transition-all duration-300 ease-in-out active:scale-90 rounded-full" href="#">
+<span class="material-symbols-outlined text-[24px]">chat_bubble</span>
+<span class="font-label-sm text-label-sm mt-base">Requests</span>
+</a>
+<!-- Active Tab: Profile -->
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-lg py-xs transition-all duration-300 ease-in-out active:scale-90" href="#">
+<span class="material-symbols-outlined text-[24px]" style="font-variation-settings: 'FILL' 1;">person</span>
+<span class="font-label-sm text-label-sm mt-base font-bold">Profile</span>
+</a>
+</nav>
+<!-- Script to simulate simple interactions -->
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const logoutBtn = document.querySelector('button.border-error');
+            if(logoutBtn) {
+                logoutBtn.addEventListener('click', () => {
+                    // Simulate logout action visual feedback
+                    logoutBtn.classList.add('opacity-50', 'pointer-events-none');
+                    logoutBtn.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">sync</span> Logging out...';
+                    setTimeout(() => {
+                        logoutBtn.classList.remove('opacity-50', 'pointer-events-none');
+                        logoutBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">logout</span> Logout';
+                    }, 1000);
+                });
+            }
+        });
+    </script>
+</body></html>

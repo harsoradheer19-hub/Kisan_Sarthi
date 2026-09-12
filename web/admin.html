@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kisan Sarthi — Admin Portal</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #f4f6f4;
+      min-height: 100vh;
+      display: block;
+      padding: 0;
+      color: #1a1c1c;
+      font-family: 'Inter', sans-serif;
+    }
+    .admin-navbar {
+      background-color: #0d631b;
+      color: #ffffff;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .admin-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .admin-container {
+      max-width: 1240px;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      border: 1px solid #e8e8e8;
+    }
+    .stat-number {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0d631b;
+      margin-top: 4px;
+    }
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.3fr;
+      gap: 24px;
+    }
+    .request-list-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      border: 1px solid #e8e8e8;
+    }
+    .detail-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      border: 1px solid #e8e8e8;
+      position: sticky;
+      top: 24px;
+    }
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .filter-btn {
+      padding: 6px 14px;
+      border-radius: 20px;
+      border: 1.5px solid #bfcaba;
+      background: none;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .filter-btn.active {
+      background: #2e7d32;
+      color: #ffffff;
+      border-color: #2e7d32;
+    }
+    .req-item {
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid #e8e8e8;
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .req-item:hover, .req-item.selected {
+      border-color: #0d631b;
+      background: #f9fbf9;
+    }
+    .badge-urgent {
+      background: #fee2e2;
+      color: #dc2626;
+    }
+    .badge-high {
+      background: #ffedd5;
+      color: #c2410c;
+    }
+    .badge-normal {
+      background: #f1f5f9;
+      color: #475569;
+    }
+    .login-wrapper {
+      max-width: 420px;
+      margin: 80px auto;
+      background: #ffffff;
+      padding: 36px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      border: 1px solid #e8e8e8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Admin Login Screen Container -->
+  <div id="adminLoginScreen">
+    <div class="login-wrapper">
+      <!-- UNIFIED ROLE TOGGLE SWITCHER -->
+      <div style="background: #e8f5e9; border-radius: 12px; padding: 4px; display: flex; margin-bottom: 20px;">
+        <button type="button" onclick="window.location.href='/'" style="flex: 1; padding: 10px; border: none; border-radius: 8px; font-weight: 700; font-size: 13px; color: #2e7d32; background: transparent; cursor: pointer;">
+          👨‍🌾 Farmer App
+        </button>
+        <button type="button" style="flex: 1; padding: 10px; border: none; border-radius: 8px; font-weight: 700; font-size: 13px; color: white; background: #0d631b; cursor: pointer; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          🛡️ Admin Portal
+        </button>
+      </div>
+
+      <div style="text-align: center; margin-bottom: 24px;">
+        <div style="width: 72px; height: 72px; border-radius: 50%; background: #e8f5e9; display: flex; align-items: center; justify-content: center; margin: 0 auto 12px;">
+          <span class="material-symbols-outlined" style="font-size: 40px; color: #0d631b;">admin_panel_settings</span>
+        </div>
+        <h2 style="font-size: 24px; font-weight: 700; color: #0d631b; margin-bottom: 4px;">Kisan Sarthi Portal</h2>
+        <p style="font-size: 14px; color: #707a6c;">Sign in with certified agronomist / admin credentials</p>
+      </div>
+
+      <div id="adminLoginError" style="display: none; background: #ffebee; color: #c62828; padding: 12px; border-radius: 12px; font-size: 13px; margin-bottom: 16px; border: 1px solid #ef9a9a; line-height: 1.4;"></div>
+
+      <form onsubmit="handleAdminLoginSubmit(event)">
+        <div style="margin-bottom: 16px;">
+          <label style="font-weight: 600; font-size: 14px; display: block; margin-bottom: 6px;">Email Address</label>
+          <input type="email" id="adminEmailInput" required placeholder="admin@kisansarthi.org" style="width: 100%; padding: 12px 14px; border: 1.5px solid #bfcaba; border-radius: 12px; font-size: 15px;"/>
+        </div>
+
+        <div style="margin-bottom: 24px;">
+          <label style="font-weight: 600; font-size: 14px; display: block; margin-bottom: 6px;">Password</label>
+          <input type="password" id="adminPasswordInput" required placeholder="••••••••" style="width: 100%; padding: 12px 14px; border: 1.5px solid #bfcaba; border-radius: 12px; font-size: 15px;"/>
+        </div>
+
+        <button type="submit" class="btn-primary" style="width: 100%; padding: 14px; font-size: 15px; font-weight: 700; background: #0d631b; border: none; border-radius: 12px; color: white; cursor: pointer;">
+          Sign In
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard Screen Container (Protected) -->
+  <div id="adminDashboardScreen" style="display: none;">
+    <header class="admin-navbar">
+      <div class="admin-brand">
+        <span class="material-symbols-outlined" style="font-size: 32px;">support_agent</span>
+        <span>Kisan Sarthi — Admin Portal</span>
+      </div>
+      <div style="display: flex; align-items: center; gap: 20px;">
+        <div style="text-align: right;">
+          <div style="font-size: 14px; font-weight: 700;" id="adminHeaderName">Dr. V. K. Sharma</div>
+          <div style="font-size: 11px; opacity: 0.85;">Senior Agronomist • Role: Admin</div>
+        </div>
+        <button class="filter-btn" style="background: rgba(255,255,255,0.2); color: white; border-color: transparent;" onclick="handleAdminLogout()">Logout</button>
+      </div>
+    </header>
+
+    <div class="admin-container">
+      <!-- Stats Cards -->
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div style="font-size: 12px; font-weight: 700; color: #707a6c; text-transform: uppercase;">Total Requests</div>
+          <div class="stat-number" id="statTotal">0</div>
+        </div>
+        <div class="stat-card">
+          <div style="font-size: 12px; font-weight: 700; color: #707a6c; text-transform: uppercase;">Pending</div>
+          <div class="stat-number" style="color: #d97706;" id="statPending">0</div>
+        </div>
+        <div class="stat-card">
+          <div style="font-size: 12px; font-weight: 700; color: #707a6c; text-transform: uppercase;">In Review</div>
+          <div class="stat-number" style="color: #2563eb;" id="statInReview">0</div>
+        </div>
+        <div class="stat-card">
+          <div style="font-size: 12px; font-weight: 700; color: #707a6c; text-transform: uppercase;">Need Info</div>
+          <div class="stat-number" style="color: #9333ea;" id="statNeedInfo">0</div>
+        </div>
+        <div class="stat-card">
+          <div style="font-size: 12px; font-weight: 700; color: #707a6c; text-transform: uppercase;">Resolved</div>
+          <div class="stat-number" style="color: #0d631b;" id="statResolved">0</div>
+        </div>
+      </div>
+
+      <!-- Search & Filters -->
+      <div style="background: white; border-radius: 16px; padding: 16px; margin-bottom: 20px; border: 1px solid #e8e8e8; display: flex; gap: 16px; align-items: center;">
+        <input type="text" id="adminSearchInput" oninput="filterAdminRequests()" placeholder="Search by Farmer Name, Crop, Request ID..." style="flex: 1; padding: 10px 14px; border: 1.5px solid #bfcaba; border-radius: 10px; font-size: 14px;"/>
+        <select id="priorityFilterSelect" onchange="filterAdminRequests()" style="padding: 10px 14px; border: 1.5px solid #bfcaba; border-radius: 10px; font-size: 14px;">
+          <option value="All">All Priorities</option>
+          <option value="Urgent">Urgent</option>
+          <option value="High">High</option>
+          <option value="Normal">Normal</option>
+        </select>
+      </div>
+
+      <!-- Main Workspace -->
+      <div class="main-grid">
+        <!-- Requests List -->
+        <div class="request-list-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <h3 style="font-size: 18px; font-weight: 700;">Farmer Requests Queue</h3>
+            <button onclick="loadAdminRequests()" class="icon-btn" title="Refresh">
+              <span class="material-symbols-outlined">refresh</span>
+            </button>
+          </div>
+
+          <div class="filter-bar">
+            <button class="filter-btn active" onclick="setFilter('All', this)">All</button>
+            <button class="filter-btn" onclick="setFilter('Pending', this)">Pending</button>
+            <button class="filter-btn" onclick="setFilter('In Review', this)">In Review</button>
+            <button class="filter-btn" onclick="setFilter('More Information Required', this)">Need Info</button>
+            <button class="filter-btn" onclick="setFilter('Resolved', this)">Resolved</button>
+          </div>
+
+          <div id="adminRequestsListContainer">
+            <!-- Request items -->
+          </div>
+        </div>
+
+        <!-- Request Detail Panel -->
+        <div class="detail-card" id="adminDetailPanel">
+          <div style="text-align: center; padding: 40px; color: #707a6c;">
+            <span class="material-symbols-outlined" style="font-size: 48px; margin-bottom: 12px;">touch_app</span>
+            <p>Select a farmer request from the list to view complete agronomic details, ask follow-up questions, and send expert recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

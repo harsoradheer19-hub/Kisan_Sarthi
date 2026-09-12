@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kisan Sarthi - Onboarding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary": "#734e00",
+                    "primary-container": "#2e7d32",
+                    "outline-variant": "#bfcaba",
+                    "on-secondary-container": "#5b675e",
+                    "surface-container": "#eeeeee",
+                    "on-primary": "#ffffff",
+                    "surface-tint": "#1b6d24",
+                    "on-tertiary-fixed": "#281900",
+                    "tertiary-fixed-dim": "#ffba38",
+                    "secondary-fixed-dim": "#bdcabe",
+                    "on-surface": "#1a1c1c",
+                    "tertiary-container": "#926500",
+                    "primary-fixed-dim": "#88d982",
+                    "on-secondary-fixed": "#131e17",
+                    "on-primary-fixed": "#002204",
+                    "surface-container-low": "#f3f3f3",
+                    "surface-container-lowest": "#ffffff",
+                    "surface": "#f9f9f9",
+                    "background": "#f9f9f9",
+                    "on-error-container": "#93000a",
+                    "surface-container-high": "#e8e8e8",
+                    "on-error": "#ffffff",
+                    "secondary-container": "#d9e6da",
+                    "on-secondary-fixed-variant": "#3e4a41",
+                    "primary": "#0d631b",
+                    "on-background": "#1a1c1c",
+                    "secondary-fixed": "#d9e6da",
+                    "inverse-primary": "#88d982",
+                    "inverse-on-surface": "#f0f1f1",
+                    "on-primary-fixed-variant": "#005312",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#556158",
+                    "on-tertiary-fixed-variant": "#604100",
+                    "surface-bright": "#f9f9f9",
+                    "on-surface-variant": "#40493d",
+                    "surface-variant": "#e2e2e2",
+                    "surface-container-highest": "#e2e2e2",
+                    "surface-dim": "#dadada",
+                    "error-container": "#ffdad6",
+                    "primary-fixed": "#a3f69c",
+                    "error": "#ba1a1a",
+                    "tertiary-fixed": "#ffdeac",
+                    "inverse-surface": "#2f3131",
+                    "outline": "#707a6c",
+                    "on-tertiary-container": "#ffefda",
+                    "on-primary-container": "#cbffc2",
+                    "on-tertiary": "#ffffff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "base": "4px",
+                    "lg": "24px",
+                    "xl": "32px",
+                    "sm": "12px",
+                    "touch-target": "48px",
+                    "margin-mobile": "16px",
+                    "md": "16px",
+                    "xs": "8px",
+                    "gutter-mobile": "12px"
+            },
+            "fontFamily": {
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-lg": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Inter"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-lg": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "fontWeight": "500"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-sm": ["20px", {"lineHeight": "28px", "fontWeight": "600"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-sans antialiased overflow-x-hidden">
+<!-- Header area (Skip button) -->
+<header class="flex justify-end items-center w-full px-margin-mobile pt-margin-mobile h-touch-target">
+<button class="font-label-lg text-label-lg text-on-surface-variant h-full flex items-center px-4 hover:text-primary transition-colors">
+            Skip
+        </button>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow flex flex-col px-margin-mobile pt-xl pb-24 max-w-lg mx-auto w-full relative">
+<!-- Illustration Area -->
+<div class="w-full flex justify-center mb-xl rounded-2xl overflow-hidden shadow-sm bg-surface-container-lowest">
+<img class="w-full h-auto object-cover max-h-[300px]" data-alt="A warm, modern illustration of a farmer holding a digital tablet in a lush green agricultural field. The farmer is thoughtfully considering options on the screen, representing the selection of a farming problem. The style is clean, vector-based, and human-centric, using shades of vibrant primary green (#0d631b) and soft earth tones, set against a bright, welcoming light-mode background. The overall mood is hopeful, empowering, and technologically integrated." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMcSiDeWEVSCT49CpSRkfqNodh0SktureyF3OQ7l8XkqJYj64B_Xz0u6vYyN1g2jWQ0MZeuImjzOIQjv3uojKsbk8_3LRmvKVky4YxXCL7NcIEqE0sRn0gutdUs0b7gAIhZgEMTr3jvS2jZGlVrZuU9esVZ6a85KSwVTwrYTSlVQbNL63c9-hAV7h7AllGOw_sIVH9vIXykM_lElQxX629qu9uATD-kg8ldc-tkBvd1AJer2D0FH6f"/>
+</div>
+<!-- Typography & Context -->
+<div class="text-center mb-xl">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile md:font-headline-lg md:text-headline-lg text-on-surface mb-sm">Select your farming problem</h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm mx-auto">
+                Tell us what you need help with so we can personalize your Kisan Sarthi experience.
+            </p>
+</div>
+<!-- Bento Grid / Options Selection -->
+<div class="grid grid-cols-2 gap-sm mb-lg">
+<!-- Option 1 -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="problem" type="radio"/>
+<div class="flex flex-col items-center justify-center p-md bg-surface-container-lowest rounded-xl border-2 border-transparent peer-checked:border-primary peer-checked:bg-secondary-container shadow-sm transition-all duration-200 min-h-[120px] hover:shadow-md">
+<span class="material-symbols-outlined text-4xl text-primary mb-xs" style="font-variation-settings: 'FILL' 1;">pest_control</span>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Pest Control</span>
+</div>
+</label>
+<!-- Option 2 -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="problem" type="radio"/>
+<div class="flex flex-col items-center justify-center p-md bg-surface-container-lowest rounded-xl border-2 border-transparent peer-checked:border-primary peer-checked:bg-secondary-container shadow-sm transition-all duration-200 min-h-[120px] hover:shadow-md">
+<span class="material-symbols-outlined text-4xl text-tertiary-fixed-dim mb-xs" style="font-variation-settings: 'FILL' 1;">water_drop</span>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Irrigation</span>
+</div>
+</label>
+<!-- Option 3 -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="problem" type="radio"/>
+<div class="flex flex-col items-center justify-center p-md bg-surface-container-lowest rounded-xl border-2 border-transparent peer-checked:border-primary peer-checked:bg-secondary-container shadow-sm transition-all duration-200 min-h-[120px] hover:shadow-md">
+<span class="material-symbols-outlined text-4xl text-outline mb-xs" style="font-variation-settings: 'FILL' 1;">compost</span>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Soil Health</span>
+</div>
+</label>
+<!-- Option 4 -->
+<label class="relative cursor-pointer group">
+<input class="peer sr-only" name="problem" type="radio"/>
+<div class="flex flex-col items-center justify-center p-md bg-surface-container-lowest rounded-xl border-2 border-transparent peer-checked:border-primary peer-checked:bg-secondary-container shadow-sm transition-all duration-200 min-h-[120px] hover:shadow-md">
+<span class="material-symbols-outlined text-4xl text-primary mb-xs" style="font-variation-settings: 'FILL' 1;">agriculture</span>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Crop Yield</span>
+</div>
+</label>
+</div>
+</main>
+<!-- Bottom Action Bar (Fixed on mobile) -->
+<div class="fixed bottom-0 left-0 w-full bg-surface/90 backdrop-blur-sm border-t border-surface-dim p-margin-mobile z-50">
+<div class="max-w-lg mx-auto w-full">
+<button class="w-full h-touch-target bg-primary text-on-primary font-label-lg text-label-lg rounded-full flex items-center justify-center shadow-lg hover:bg-surface-tint transition-colors active:scale-95">
+                Next
+            </button>
+</div>
+</div>
+</body></html>

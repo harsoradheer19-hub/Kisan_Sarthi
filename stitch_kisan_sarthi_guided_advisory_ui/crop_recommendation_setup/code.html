@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>Find the best crop for your land</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#734e00",
+                        "primary-container": "#2e7d32",
+                        "outline-variant": "#bfcaba",
+                        "on-secondary-container": "#5b675e",
+                        "surface-container": "#eeeeee",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#1b6d24",
+                        "on-tertiary-fixed": "#281900",
+                        "tertiary-fixed-dim": "#ffba38",
+                        "secondary-fixed-dim": "#bdcabe",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#926500",
+                        "primary-fixed-dim": "#88d982",
+                        "on-secondary-fixed": "#131e17",
+                        "on-primary-fixed": "#002204",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e8e8e8",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d9e6da",
+                        "on-secondary-fixed-variant": "#3e4a41",
+                        "primary": "#0d631b",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#d9e6da",
+                        "inverse-primary": "#88d982",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#556158",
+                        "on-tertiary-fixed-variant": "#604100",
+                        "surface-bright": "#f9f9f9",
+                        "on-surface-variant": "#40493d",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#a3f69c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdeac",
+                        "inverse-surface": "#2f3131",
+                        "outline": "#707a6c",
+                        "on-tertiary-container": "#ffefda",
+                        "on-primary-container": "#cbffc2",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "lg": "24px",
+                        "xl": "32px",
+                        "sm": "12px",
+                        "touch-target": "48px",
+                        "margin-mobile": "16px",
+                        "md": "16px",
+                        "xs": "8px",
+                        "gutter-mobile": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .chip-input:checked + .chip-label {
+            background-color: theme('colors.primary-container');
+            color: theme('colors.on-primary-container');
+            border-color: theme('colors.primary-container');
+        }
+        .chip-input:checked + .chip-label .material-symbols-outlined {
+            color: theme('colors.on-primary-container');
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-margin-mobile h-touch-target sticky top-0 z-50 bg-surface dark:bg-background">
+<button aria-label="Menu" class="flex items-center justify-center w-touch-target h-touch-target transition-transform duration-200 active:scale-95 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full text-primary dark:text-primary-fixed">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">Namaste, Farmer</h1>
+<div class="flex items-center justify-center w-touch-target h-touch-target rounded-full overflow-hidden bg-surface-container">
+<img alt="Farmer Profile Avatar" class="w-full h-full object-cover" data-alt="A close-up portrait of an Indian farmer with a warm, welcoming smile, wearing a traditional turban or cap. The lighting is soft and natural, suggesting early morning sunlight. The background is a slightly blurred lush green field. The image conveys trust, warmth, and agricultural expertise in a modern, optimistic light-mode aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdzCc90VZZ9HlXE5HB7RGvCLGy20od5QbFmCAXtSivwkxk-mLmz_SYU-AM9TBJA0_Bwo2QcSK1CHdf5ORZvpUP8trgtvjgF8BMd7_fpvu_P3FTtwRt9wcLkrH57VUjTiznayMmwvXwKb4Pn9zNv5W1bg1ubgHOmGpH25RYJ-QXF1bq2t3XiIoi_cdT0l0hVA7I2uyp0t-BBriGytDhGkEcawUEmAkj8xdyRPcuyywOzbZH-tSeORzq"/>
+</div>
+</header>
+<main class="px-margin-mobile pt-lg max-w-2xl mx-auto">
+<div class="mb-xl">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-xs">Find the best crop for your land</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Select your soil type and water availability to get personalized recommendations.</p>
+</div>
+<form onsubmit="event.preventDefault(); window.location.href='#';">
+<!-- Soil Type Selection -->
+<section class="mb-xl">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-md">1. Soil Type</h3>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-sm">
+<!-- Loamy -->
+<label class="relative cursor-pointer">
+<input class="chip-input sr-only" name="soil_type" required="" type="radio" value="loamy"/>
+<div class="chip-label flex flex-col items-center justify-center p-md bg-surface-container-lowest border border-outline rounded-xl hover:bg-surface-container-low transition-colors h-24">
+<span class="material-symbols-outlined text-outline mb-xs" data-icon="grass" style="font-variation-settings: 'FILL' 0;">grass</span>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Loamy</span>
+</div>
+</label>
+<!-- Clayey -->
+<label class="relative cursor-pointer">
+<input class="chip-input sr-only" name="soil_type" type="radio" value="clayey"/>
+<div class="chip-label flex flex-col items-center justify-center p-md bg-surface-container-lowest border border-outline rounded-xl hover:bg-surface-container-low transition-colors h-24">
+<span class="material-symbols-outlined text-outline mb-xs" data-icon="water_drop" style="font-variation-settings: 'FILL' 0;">water_drop</span>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Clayey</span>
+</div>
+</label>
+<!-- Sandy -->
+<label class="relative cursor-pointer">
+<input class="chip-input sr-only" name="soil_type" type="radio" value="sandy"/>
+<div class="chip-label flex flex-col items-center justify-center p-md bg-surface-container-lowest border border-outline rounded-xl hover:bg-surface-container-low transition-colors h-24">
+<span class="material-symbols-outlined text-outline mb-xs" data-icon="grain" style="font-variation-settings: 'FILL' 0;">grain</span>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Sandy</span>
+</div>
+</label>
+<!-- Black Soil -->
+<label class="relative cursor-pointer">
+<input class="chip-input sr-only" name="soil_type" type="radio" value="black"/>
+<div class="chip-label flex flex-col items-center justify-center p-md bg-surface-container-lowest border border-outline rounded-xl hover:bg-surface-container-low transition-colors h-24">
+<span class="material-symbols-outlined text-outline mb-xs" data-icon="landscape" style="font-variation-settings: 'FILL' 0;">landscape</span>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Black Soil</span>
+</div>
+</label>
+<!-- Other -->
+<label class="relative cursor-pointer">
+<input class="chip-input sr-only" name="soil_type" type="radio" value="other"/>
+<div class="chip-label flex flex-col items-center justify-center p-md bg-surface-container-lowest border border-outline rounded-xl hover:bg-surface-container-low transition-colors h-24">
+<span class="material-symbols-outlined text-outline mb-xs" data-icon="help_outline" style="font-variation-settings: 'FILL' 0;">help_outline</span>
+<span class="font-label-lg text-label-lg text-on-surface text-center">Other</span>
+</div>
+</label>
+</div>
+</section>
+<!-- Water Availability Selection -->
+<section class="mb-xl">
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-md">2. Water Availability</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-sm">
+<!-- Low -->
+<label class="relative cursor-pointer">
+<input class="chip-input sr-only" name="water" required="" type="radio" value="low"/>
+<div class="chip-label flex items-center p-md bg-surface-container-lowest border border-outline rounded-xl hover:bg-surface-container-low transition-colors h-16">
+<span class="material-symbols-outlined text-outline mr-sm" data-icon="water_do" style="font-variation-settings: 'FILL' 0;">water_drop</span> <!-- Using water_drop with low opacity visually if possible, or distinct icon -->
+<span class="font-label-lg text-label-lg text-on-surface">Low (Rainfed)</span>
+</div>
+</label>
+<!-- Medium -->
+<label class="relative cursor-pointer">
+<input class="chip-input sr-only" name="water" type="radio" value="medium"/>
+<div class="chip-label flex items-center p-md bg-surface-container-lowest border border-outline rounded-xl hover:bg-surface-container-low transition-colors h-16">
+<span class="material-symbols-outlined text-outline mr-sm" data-icon="waves" style="font-variation-settings: 'FILL' 0;">waves</span>
+<span class="font-label-lg text-label-lg text-on-surface">Medium (Canal/Well)</span>
+</div>
+</label>
+<!-- High -->
+<label class="relative cursor-pointer">
+<input class="chip-input sr-only" name="water" type="radio" value="high"/>
+<div class="chip-label flex items-center p-md bg-surface-container-lowest border border-outline rounded-xl hover:bg-surface-container-low transition-colors h-16">
+<span class="material-symbols-outlined text-outline mr-sm" data-icon="flood" style="font-variation-settings: 'FILL' 0;">flood</span>
+<span class="font-label-lg text-label-lg text-on-surface">High (Abundant)</span>
+</div>
+</label>
+</div>
+</section>
+<!-- Sticky Action Button Container for Mobile -->
+<div class="fixed bottom-0 left-0 w-full px-margin-mobile py-md bg-surface shadow-[0_-4px_20px_rgba(0,0,0,0.05)] z-40 md:relative md:bg-transparent md:shadow-none md:p-0 md:mt-xl">
+<button class="w-full h-touch-target bg-primary text-on-primary font-label-lg text-label-lg rounded-full flex items-center justify-center shadow-md hover:bg-surface-tint transition-colors active:scale-95 md:w-auto md:px-xl" type="submit">
+                    See Recommendations
+                    <span class="material-symbols-outlined ml-xs" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</form>
+</main>
+</body></html>

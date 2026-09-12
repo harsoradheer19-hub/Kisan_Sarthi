@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Support Requests</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#734e00",
+                        "primary-container": "#2e7d32",
+                        "outline-variant": "#bfcaba",
+                        "on-secondary-container": "#5b675e",
+                        "surface-container": "#eeeeee",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#1b6d24",
+                        "on-tertiary-fixed": "#281900",
+                        "tertiary-fixed-dim": "#ffba38",
+                        "secondary-fixed-dim": "#bdcabe",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#926500",
+                        "primary-fixed-dim": "#88d982",
+                        "on-secondary-fixed": "#131e17",
+                        "on-primary-fixed": "#002204",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e8e8e8",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d9e6da",
+                        "on-secondary-fixed-variant": "#3e4a41",
+                        "primary": "#0d631b",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#d9e6da",
+                        "inverse-primary": "#88d982",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#556158",
+                        "on-tertiary-fixed-variant": "#604100",
+                        "surface-bright": "#f9f9f9",
+                        "on-surface-variant": "#40493d",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#a3f69c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdeac",
+                        "inverse-surface": "#2f3131",
+                        "outline": "#707a6c",
+                        "on-tertiary-container": "#ffefda",
+                        "on-primary-container": "#cbffc2",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "lg": "24px",
+                        "xl": "32px",
+                        "sm": "12px",
+                        "touch-target": "48px",
+                        "margin-mobile": "16px",
+                        "md": "16px",
+                        "xs": "8px",
+                        "gutter-mobile": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-safe">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-margin-mobile h-touch-target sticky top-0 z-50 bg-surface dark:bg-background">
+<button class="h-touch-target w-touch-target flex items-center justify-center transition-transform duration-200 active:scale-95 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full text-on-surface-variant dark:text-on-surface-variant">
+<span class="material-symbols-outlined text-primary dark:text-primary-fixed">menu</span>
+</button>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">Namaste, Farmer</h1>
+<button class="h-touch-target w-touch-target flex items-center justify-center transition-transform duration-200 active:scale-95 hover:bg-surface-container dark:hover:bg-surface-container-high rounded-full overflow-hidden">
+<img alt="Farmer Profile Avatar" class="w-full h-full object-cover rounded-full" data-alt="A portrait photo of an Indian farmer with a warm, welcoming smile, wearing a traditional light cotton shirt, standing in a vibrant green agricultural field under a clear blue sky, exuding a sense of hard work and approachability. The image style is bright, natural, and highly detailed, conveying a modern agricultural aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1waQDQuBkhQqUTmC0n_CytHjyvGAmGDbq-sdMu12O3uqhyUvIJ6v7ndrkyELqV1HJRz4ENRCbhz2q6SLOc2Wu4KtdQKg0x1abfprGE0xXELH8X24_VQpHi0WfS71zu9Y_tO5pFpTsBoajLmAPDvZem6Xf_e___Xe3u9JYTA-ZqqDkzRFsdzjdwKIW84mrH8-I0p0JtsOxR5dcToobxKdzLy3CY7VlwqXP0hqbU7SfTRTBJJO4fFG7"/>
+</button>
+</header>
+<!-- Main Content -->
+<main class="px-margin-mobile pt-lg pb-[80px]">
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile mb-md text-primary">Support Requests</h2>
+<!-- Tabs -->
+<div class="flex gap-xs mb-lg overflow-x-auto pb-sm no-scrollbar">
+<button class="px-lg py-sm rounded-full bg-primary-container text-on-primary-container font-label-lg text-label-lg whitespace-nowrap shadow-sm">All</button>
+<button class="px-lg py-sm rounded-full border border-outline bg-surface-container-lowest text-on-surface-variant font-label-lg text-label-lg whitespace-nowrap hover:bg-surface-container transition-colors">Pending</button>
+<button class="px-lg py-sm rounded-full border border-outline bg-surface-container-lowest text-on-surface-variant font-label-lg text-label-lg whitespace-nowrap hover:bg-surface-container transition-colors">Resolved</button>
+</div>
+<!-- Request Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<!-- Card 1: Pending -->
+<div class="bg-surface-container-lowest rounded-xl p-md shadow-[0_4px_12px_rgba(46,125,50,0.05)] border border-surface-variant flex flex-col gap-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-tertiary-fixed-dim/20 to-transparent rounded-tr-xl"></div>
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm text-outline">#KS1024</span>
+<span class="px-sm py-base rounded-full bg-tertiary-fixed text-on-tertiary-fixed-variant font-label-sm text-label-sm flex items-center gap-base">
+<span class="material-symbols-outlined text-[14px]">pending</span>
+                        Pending
+                    </span>
+</div>
+<div class="flex gap-md mt-xs">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<img alt="Tomato yellow leaves" class="w-full h-full object-cover" data-alt="A close-up, high-resolution photo of a tomato plant leaf that has turned yellow, indicating a potential nutrient deficiency or disease. The leaf is in focus against a slightly blurred background of green foliage in a garden setting, illuminated by soft, natural daylight. The mood is analytical and detailed, suitable for agricultural diagnosis." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT1E6Cv3s-lmrOMmgRoX4wn6ddp6_E-VjI6jznr3ut1HMY95dno5q941wNHOBSRXGOg0QzK6yQLoA_ukHHOiRO4iLvCQmCRCz0yxGYiXP5VjIa-AWjuMAd5XqVQokgV3o9iO2gnbjCzjKwunhKbaM-PCon4J64n04smSpFe7E4GEHA_x5Z8t3FaCzOXco8ph3cUxO01CvB7OsaAkKqOYRT-vnpULRbKFivooC6HaZLKM8QlFRyZ5dX"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-base group-hover:text-primary transition-colors">Tomato - Yellow Leaves</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Leaves on the lower branches of the tomato plants are turning yellow with brown spots.</p>
+</div>
+</div>
+<div class="mt-auto pt-md border-t border-surface-variant flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-outline">Submitted 2 days ago</span>
+<button class="font-label-lg text-label-lg text-primary flex items-center gap-xs hover:text-primary-container transition-colors">
+                        View Details
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Card 2: Resolved -->
+<div class="bg-surface-container-lowest rounded-xl p-md shadow-[0_4px_12px_rgba(46,125,50,0.05)] border border-surface-variant flex flex-col gap-sm relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-16 h-16 bg-gradient-to-bl from-primary-fixed/20 to-transparent rounded-tr-xl"></div>
+<div class="flex justify-between items-start">
+<span class="font-label-sm text-label-sm text-outline">#KS1021</span>
+<span class="px-sm py-base rounded-full bg-primary-container/20 text-on-primary-container font-label-sm text-label-sm flex items-center gap-base">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                        Resolved
+                    </span>
+</div>
+<div class="flex gap-md mt-xs">
+<div class="w-16 h-16 rounded-lg overflow-hidden shrink-0 bg-surface-container">
+<img alt="Rice pest problem" class="w-full h-full object-cover" data-alt="A detailed macro photograph showing signs of pest damage on a rice plant stem or leaf. Tiny insects might be visible, or distinct chewing marks. The setting is a bright, sunlit paddy field with a shallow depth of field focusing solely on the damaged area. The aesthetic is documentary and highly informative for agricultural context." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZjRxpDLvzJJEff4sQ4YTzTC-A1IMPHLA-9boo27-gmIMubBT8BOgZ-O9Mjs2YuoWkGM8QjVCtngrlKjpQ7sq6xCa2u8nLwCs2EslE4E8N_lNLq05N8yjLKRdNcyzCNSaaSsiMugyHnOimxS7w-K9zwUFDW18sd-xOrQsq3Htpus5hom6HcuWTeRAbsB25WAtBTn3GlYXNeqq5PWI0wb491NXH62WzgI8xM-hVVL3iryMHYdp2ViFE"/>
+</div>
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-base group-hover:text-primary transition-colors">Rice - Pest Problem</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Small brown insects noticed near the base of the stems, causing wilting.</p>
+</div>
+</div>
+<div class="mt-auto pt-md border-t border-surface-variant flex justify-between items-center">
+<span class="font-label-sm text-label-sm text-outline">Submitted 5 days ago</span>
+<button class="font-label-lg text-label-lg text-primary flex items-center gap-xs hover:text-primary-container transition-colors">
+                        View Details
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Floating Action Button for New Request -->
+<button class="fixed bottom-[96px] right-margin-mobile w-touch-target h-touch-target bg-primary text-on-primary rounded-xl shadow-lg flex items-center justify-center transition-transform duration-200 active:scale-95 hover:shadow-xl md:hidden z-40">
+<span class="material-symbols-outlined">add</span>
+</button>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-xs pb-safe bg-surface dark:bg-surface-container shadow-[0_-2px_10px_rgba(0,0,0,0.05)] rounded-t-xl md:hidden">
+<!-- Home (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant transition-all duration-300 ease-in-out active:scale-90 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-[2px]">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</a>
+<!-- Advisory (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant transition-all duration-300 ease-in-out active:scale-90 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-[2px]">psychology</span>
+<span class="font-label-sm text-label-sm">Advisory</span>
+</a>
+<!-- Requests (Active) -->
+<a class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-lg py-xs transition-all duration-300 ease-in-out active:scale-90" href="#">
+<span class="material-symbols-outlined mb-[2px]" style="font-variation-settings: 'FILL' 1;">chat_bubble</span>
+<span class="font-label-sm text-label-sm">Requests</span>
+</a>
+<!-- Profile (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant transition-all duration-300 ease-in-out active:scale-90 rounded-xl" href="#">
+<span class="material-symbols-outlined mb-[2px]">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</a>
+</nav>
+</body></html>

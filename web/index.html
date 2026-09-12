@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kisan Sarthi - Har Kisan Ka Smart Saathi</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <div class="device-wrapper">
+    <!-- Header (Dynamic) -->
+    <header class="app-header" id="appHeader">
+      <button class="icon-btn" id="headerBackBtn" style="visibility: hidden;">
+        <span class="material-symbols-outlined">arrow_back</span>
+      </button>
+      <span class="app-title" id="headerTitle">Kisan Sarthi</span>
+      <a href="/admin.html" class="icon-btn" title="Admin / Expert Portal" style="color: white; text-decoration: none; display: flex; align-items: center; justify-content: center;">
+        <span class="material-symbols-outlined">admin_panel_settings</span>
+      </a>
+      <button class="icon-btn" id="headerProfileBtn">
+        <span class="material-symbols-outlined">account_circle</span>
+      </button>
+    </header>
+
+    <!-- Main Dynamic Screen View Container -->
+    <main class="view-container" id="mainContainer">
+      <!-- Screen Views Rendered Dynamically via JS -->
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="bottom-nav" id="bottomNav">
+      <button class="nav-item active" data-target="home">
+        <span class="material-symbols-outlined">home</span>
+        <span>Home</span>
+      </button>
+      <button class="nav-item" data-target="select-category">
+        <span class="material-symbols-outlined">psychology</span>
+        <span>Advisory</span>
+      </button>
+      <button class="nav-item" data-target="my-requests">
+        <span class="material-symbols-outlined">assignment</span>
+        <span>Requests</span>
+      </button>
+      <button class="nav-item" data-target="profile">
+        <span class="material-symbols-outlined">person</span>
+        <span>Profile</span>
+      </button>
+    </nav>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kisan Sarthi - Splash Screen</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#734e00",
+                        "primary-container": "#2e7d32",
+                        "outline-variant": "#bfcaba",
+                        "on-secondary-container": "#5b675e",
+                        "surface-container": "#eeeeee",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#1b6d24",
+                        "on-tertiary-fixed": "#281900",
+                        "tertiary-fixed-dim": "#ffba38",
+                        "secondary-fixed-dim": "#bdcabe",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#926500",
+                        "primary-fixed-dim": "#88d982",
+                        "on-secondary-fixed": "#131e17",
+                        "on-primary-fixed": "#002204",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e8e8e8",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d9e6da",
+                        "on-secondary-fixed-variant": "#3e4a41",
+                        "primary": "#0d631b",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#d9e6da",
+                        "inverse-primary": "#88d982",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#556158",
+                        "on-tertiary-fixed-variant": "#604100",
+                        "surface-bright": "#f9f9f9",
+                        "on-surface-variant": "#40493d",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#a3f69c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdeac",
+                        "inverse-surface": "#2f3131",
+                        "outline": "#707a6c",
+                        "on-tertiary-container": "#ffefda",
+                        "on-primary-container": "#cbffc2",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "lg": "24px",
+                        "xl": "32px",
+                        "sm": "12px",
+                        "touch-target": "48px",
+                        "margin-mobile": "16px",
+                        "md": "16px",
+                        "xs": "8px",
+                        "gutter-mobile": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                },
+            }
+        }
+    </script>
+<style>
+        .loader {
+            border: 3px solid theme('colors.secondary-container');
+            border-top: 3px solid theme('colors.primary');
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface text-on-surface h-screen w-full flex flex-col items-center justify-between font-body-md overflow-hidden antialiased">
+<!-- Top Padding / Safe Area -->
+<div class="w-full h-[10%]"></div>
+<!-- Main Content -->
+<main class="flex flex-col items-center justify-center w-full max-w-md px-margin-mobile flex-grow fade-in-up">
+<!-- Illustration -->
+<div class="w-64 h-64 mb-xl relative">
+<img class="w-full h-full object-contain drop-shadow-sm rounded-xl" data-alt="A clean, minimal vector illustration of a friendly Indian farmer standing proudly next to healthy, vibrant green crops. The style should be modern, utilizing smooth curves and a sophisticated palette focused on deep greens and warm earth tones against a soft off-white background, avoiding unnecessary detail to maintain a highly professional UI aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAbirUlzrob2YDkLm9TP_HZc7pO54zxB2YFPOheGWd47jGuwA-vlCqxnJMITixhIdsAITK_jA3MtW1YN8FrlazL7ZL-XrucDa86VPt0SNzrCX52WblQkd96NnOim5VlMEGkI2MYC1XA4_kowJ53d0Os5oT9raqtSrbjd4SeBkYqt7unapTW3MEEsVej4EOxwAqEINDV9q15hlsNblTtnRYgteUknpRdzdXVkjHaG1dngPKA0lSM0gz"/>
+</div>
+<!-- Typography -->
+<div class="text-center space-y-sm">
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-primary tracking-tight">Kisan Sarthi</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant italic">"Har Kisan Ka Smart Saathi"</p>
+</div>
+</main>
+<!-- Footer Area -->
+<footer class="w-full px-margin-mobile pb-xl pt-lg flex flex-col items-center space-y-lg fade-in-up" style="animation-delay: 0.2s;">
+<!-- Loading State -->
+<div class="flex flex-col items-center space-y-sm">
+<div class="loader"></div>
+<span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">Loading</span>
+</div>
+<!-- Affiliation -->
+<div class="text-center">
+<p class="font-label-sm text-label-sm text-outline">K. J. Somaiya Institute of Technology</p>
+<p class="font-label-sm text-label-sm text-outline">Dept of AI &amp; Data Science</p>
+</div>
+</footer>
+</body></html>

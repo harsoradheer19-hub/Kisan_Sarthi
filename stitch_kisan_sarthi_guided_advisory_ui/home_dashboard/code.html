@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kisan Sarthi - Home Dashboard</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#734e00",
+                        "primary-container": "#2e7d32",
+                        "outline-variant": "#bfcaba",
+                        "on-secondary-container": "#5b675e",
+                        "surface-container": "#eeeeee",
+                        "on-primary": "#ffffff",
+                        "surface-tint": "#1b6d24",
+                        "on-tertiary-fixed": "#281900",
+                        "tertiary-fixed-dim": "#ffba38",
+                        "secondary-fixed-dim": "#bdcabe",
+                        "on-surface": "#1a1c1c",
+                        "tertiary-container": "#926500",
+                        "primary-fixed-dim": "#88d982",
+                        "on-secondary-fixed": "#131e17",
+                        "on-primary-fixed": "#002204",
+                        "surface-container-low": "#f3f3f3",
+                        "surface-container-lowest": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "background": "#f9f9f9",
+                        "on-error-container": "#93000a",
+                        "surface-container-high": "#e8e8e8",
+                        "on-error": "#ffffff",
+                        "secondary-container": "#d9e6da",
+                        "on-secondary-fixed-variant": "#3e4a41",
+                        "primary": "#0d631b",
+                        "on-background": "#1a1c1c",
+                        "secondary-fixed": "#d9e6da",
+                        "inverse-primary": "#88d982",
+                        "inverse-on-surface": "#f0f1f1",
+                        "on-primary-fixed-variant": "#005312",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#556158",
+                        "on-tertiary-fixed-variant": "#604100",
+                        "surface-bright": "#f9f9f9",
+                        "on-surface-variant": "#40493d",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-highest": "#e2e2e2",
+                        "surface-dim": "#dadada",
+                        "error-container": "#ffdad6",
+                        "primary-fixed": "#a3f69c",
+                        "error": "#ba1a1a",
+                        "tertiary-fixed": "#ffdeac",
+                        "inverse-surface": "#2f3131",
+                        "outline": "#707a6c",
+                        "on-tertiary-container": "#ffefda",
+                        "on-primary-container": "#cbffc2",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "base": "4px",
+                        "lg": "24px",
+                        "xl": "32px",
+                        "sm": "12px",
+                        "touch-target": "48px",
+                        "margin-mobile": "16px",
+                        "md": "16px",
+                        "xs": "8px",
+                        "gutter-mobile": "12px"
+                    },
+                    "fontFamily": {
+                        "headline-lg-mobile": ["Inter"],
+                        "headline-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-lg": ["Inter"],
+                        "label-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-sm": ["Inter"],
+                        "body-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1;
+        }
+        /* Custom Ambient Shadows */
+        .shadow-ambient {
+            box-shadow: 0 4px 20px -2px rgba(13, 99, 27, 0.08), 0 0 3px rgba(13, 99, 27, 0.04);
+        }
+        .shadow-ambient-hover {
+            box-shadow: 0 8px 30px -4px rgba(13, 99, 27, 0.12), 0 0 5px rgba(13, 99, 27, 0.06);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background antialiased min-h-screen flex flex-col pb-24 font-body-md">
+<!-- TopAppBar -->
+<header class="flex justify-between items-center w-full px-margin-mobile h-touch-target sticky top-0 z-50 bg-surface dark:bg-background">
+<button aria-label="Menu" class="w-touch-target h-touch-target flex items-center justify-start text-primary dark:text-primary-fixed transition-transform duration-200 active:scale-95">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+<div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed flex-1 text-center">
+            Namaste, Farmer
+        </div>
+<button aria-label="Farmer Profile Avatar" class="w-touch-target h-touch-target flex items-center justify-end text-primary dark:text-primary-fixed transition-transform duration-200 active:scale-95">
+<img alt="Profile Avatar" class="w-8 h-8 rounded-full object-cover" data-alt="A close-up portrait of a cheerful Indian farmer in traditional attire, wearing a bright turban. The photo is vibrant, taken outdoors with soft, natural sunlight illuminating their face. The background is slightly blurred showing lush green fields, embodying a friendly, human-centric agricultural aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1oR4jiDmZhinlgHb8C-8MV7Sg5hlFdB2ckGuZSYAyTistlFwK1FtzTeWrKBQoLtoe9CIJa3gokVa9PYJQWsWxKsI3xXCtwVQ_5wrBYvSIXEH0BtcAhj148_7w59Zj-9dhopedshDC_2-qCdyBlTYjk9WLrRjjtH5Tx3GZSedF8mvLaV9-jfHaPCL7gOeWleZTms8i5Vyw5DowpmVWMCuALeYc3vyCvtR1dt1beMhWUtiCqMdoW3YZ"/>
+</button>
+</header>
+<!-- Main Canvas -->
+<main class="flex-1 flex flex-col gap-6 p-margin-mobile max-w-md mx-auto w-full md:max-w-3xl md:p-xl md:gap-xl">
+<!-- Location & Weather Summary -->
+<section class="flex justify-between items-center bg-surface-container-lowest p-md rounded-xl shadow-ambient">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2 text-on-surface-variant font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-[18px]" data-icon="location_on">location_on</span>
+                    Solapur, Maharashtra
+                </div>
+<div class="font-headline-sm text-headline-sm text-on-surface">
+                    Good Morning
+                </div>
+</div>
+<div class="flex items-center gap-3 bg-secondary-container px-3 py-2 rounded-lg">
+<span class="material-symbols-outlined text-primary text-[28px]" data-icon="partly_cloudy_day" data-weight="fill">partly_cloudy_day</span>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">28°C</span>
+<span class="font-label-sm text-label-sm text-on-secondary-container">Partly Cloudy</span>
+</div>
+</div>
+</section>
+<!-- Main Service Cards (Bento Grid) -->
+<section class="grid grid-cols-2 gap-4">
+<!-- Crop Problem (Featured) -->
+<button class="col-span-2 md:col-span-1 bg-surface-container-lowest p-md rounded-xl shadow-ambient hover:shadow-ambient-hover transition-all duration-300 flex items-start gap-4 text-left group overflow-hidden relative">
+<div class="absolute -right-4 -bottom-4 opacity-10 transform group-hover:scale-110 transition-transform duration-500">
+<span class="material-symbols-outlined text-[120px] text-primary" data-icon="yard" data-weight="fill">yard</span>
+</div>
+<div class="w-12 h-12 rounded-full bg-primary-container flex items-center justify-center shrink-0 z-10">
+<span class="material-symbols-outlined text-on-primary-container text-[24px]" data-icon="yard">yard</span>
+</div>
+<div class="flex flex-col gap-1 z-10">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Crop Problem</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Get guidance for crop problems</p>
+</div>
+</button>
+<!-- Weather Advisory -->
+<button class="col-span-1 bg-surface-container-lowest p-md rounded-xl shadow-ambient hover:shadow-ambient-hover transition-all duration-300 flex flex-col justify-between min-h-[140px] text-left group">
+<div class="w-10 h-10 rounded-full bg-tertiary-fixed-dim/20 flex items-center justify-center shrink-0 mb-2">
+<span class="material-symbols-outlined text-tertiary text-[20px]" data-icon="cloud">cloud</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface group-hover:text-tertiary transition-colors">Weather Advisory</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">View weather and farming advice</p>
+</div>
+</button>
+<!-- Crop Recommendation -->
+<button class="col-span-1 bg-surface-container-lowest p-md rounded-xl shadow-ambient hover:shadow-ambient-hover transition-all duration-300 flex flex-col justify-between min-h-[140px] text-left group">
+<div class="w-10 h-10 rounded-full bg-primary-fixed/30 flex items-center justify-center shrink-0 mb-2">
+<span class="material-symbols-outlined text-primary-container text-[20px]" data-icon="agriculture">agriculture</span>
+</div>
+<div class="flex flex-col">
+<h3 class="font-label-lg text-label-lg text-on-surface group-hover:text-primary-container transition-colors">Crop Recommendation</h3>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-1">Find suitable crops</p>
+</div>
+</button>
+<!-- Expert Support -->
+<button class="col-span-2 bg-surface-container-lowest p-md rounded-xl shadow-ambient hover:shadow-ambient-hover transition-all duration-300 flex items-center gap-4 text-left group">
+<div class="w-12 h-12 rounded-full bg-secondary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-on-secondary-container text-[24px]" data-icon="support_agent">support_agent</span>
+</div>
+<div class="flex flex-col flex-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-on-secondary-container transition-colors">Expert Support</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Contact an agricultural expert</p>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors" data-icon="chevron_right">chevron_right</span>
+</button>
+</section>
+<!-- Recent Advisories -->
+<section class="flex flex-col gap-4 mt-2">
+<div class="flex justify-between items-end">
+<h2 class="font-headline-md text-headline-md text-on-surface">Recent Advisories</h2>
+<button class="font-label-lg text-label-lg text-primary hover:underline">View All</button>
+</div>
+<div class="flex flex-col gap-3">
+<!-- Advisory Card 1 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-ambient flex gap-4 items-center">
+<img alt="Cotton Crop" class="w-16 h-16 rounded-lg object-cover bg-surface-variant" data-alt="A close-up, high-quality macro shot of a healthy green cotton leaf with tiny water droplets on it. The lighting is soft and natural, emphasizing the vibrant green texture of the leaf against a slightly blurred, warm earthen background. Modern agricultural photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-0bjYQRap9nKvaWeoJwnOTvoqU0EPVQFJaJ6p16kfRJ9Ajj_eErTDDAw83-pUpw6ThL_HrEfxnKFTORnWFpiOM6_FpvyJhb4Y9rsqYq-57lFV_ireZa9WiOPlZe7r4nvFLf6pMVa8GbskGT3DPtuAlxWZpbfWPTUFRUP1E3H96kS2OBO6YN-Q7X3Msu3a9o9DdzoBxfgke533wMMKtoGu16W6SUFovu6lxqhdfTQt0L8MJLfyw02P"/>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-label-lg text-label-lg text-on-surface">Cotton - Pest Alert</h4>
+<span class="font-label-sm text-label-sm text-outline">2 days ago</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant line-clamp-2">Monitor for Pink Bollworm. Consider applying recommended organic pesticides if threshold is crossed.</p>
+</div>
+</div>
+<!-- Advisory Card 2 -->
+<div class="bg-surface-container-lowest p-md rounded-xl shadow-ambient flex gap-4 items-center">
+<div class="w-16 h-16 rounded-lg bg-surface-variant flex items-center justify-center text-outline-variant shrink-0">
+<span class="material-symbols-outlined text-[32px]" data-icon="grass">grass</span>
+</div>
+<div class="flex flex-col flex-1">
+<div class="flex justify-between items-start mb-1">
+<h4 class="font-label-lg text-label-lg text-on-surface">Wheat - Irrigation</h4>
+<span class="font-label-sm text-label-sm text-outline">4 days ago</span>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface-variant line-clamp-2">Schedule next irrigation within 3 days to avoid moisture stress during the flowering stage.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-gutter-mobile py-xs pb-safe bg-surface dark:bg-surface-container shadow-[0_-2px_10px_rgba(0,0,0,0.05)] rounded-t-xl md:hidden">
+<!-- Home (Active) -->
+<button class="flex flex-col items-center justify-center bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary rounded-full px-lg py-xs transition-all duration-300 ease-in-out active:scale-90 hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant group">
+<span class="material-symbols-outlined mb-1" data-icon="home" data-weight="fill">home</span>
+<span class="font-label-sm text-label-sm">Home</span>
+</button>
+<!-- Advisory (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs transition-all duration-300 ease-in-out active:scale-90 hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant group">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" data-icon="psychology">psychology</span>
+<span class="font-label-sm text-label-sm">Advisory</span>
+</button>
+<!-- Requests (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs transition-all duration-300 ease-in-out active:scale-90 hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant group">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-label-sm text-label-sm">Requests</span>
+</button>
+<!-- Profile (Inactive) -->
+<button class="flex flex-col items-center justify-center text-on-secondary-fixed-variant dark:text-on-secondary-fixed-variant px-lg py-xs transition-all duration-300 ease-in-out active:scale-90 hover:bg-secondary-container dark:hover:bg-on-secondary-fixed-variant group">
+<span class="material-symbols-outlined mb-1 group-hover:scale-110 transition-transform" data-icon="person">person</span>
+<span class="font-label-sm text-label-sm">Profile</span>
+</button>
+</nav>
+<!-- Desktop Navigation (Hidden on Mobile) -->
+<nav class="hidden md:flex fixed top-0 left-0 w-64 h-full bg-surface-container-lowest border-r border-surface-variant flex-col py-xl px-4 z-40 pt-24">
+<!-- Replicating Bottom Nav functionality for desktop context -->
+<button class="flex items-center gap-4 px-4 py-3 bg-primary-container text-on-primary-container rounded-xl mb-2 transition-colors">
+<span class="material-symbols-outlined" data-icon="home" data-weight="fill">home</span>
+<span class="font-label-lg text-label-lg">Home</span>
+</button>
+<button class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container rounded-xl mb-2 transition-colors">
+<span class="material-symbols-outlined" data-icon="psychology">psychology</span>
+<span class="font-label-lg text-label-lg">Advisory</span>
+</button>
+<button class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container rounded-xl mb-2 transition-colors">
+<span class="material-symbols-outlined" data-icon="chat_bubble">chat_bubble</span>
+<span class="font-label-lg text-label-lg">Requests</span>
+</button>
+<button class="flex items-center gap-4 px-4 py-3 text-on-surface-variant hover:bg-surface-container rounded-xl mb-2 transition-colors">
+<span class="material-symbols-outlined" data-icon="person">person</span>
+<span class="font-label-lg text-label-lg">Profile</span>
+</button>
+</nav>
+</body></html>

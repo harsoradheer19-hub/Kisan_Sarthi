@@ -1,0 +1,2934 @@
+{
+  "users": [
+    {
+      "id": "USR-FARMER-1",
+      "name": "Ramesh Patil",
+      "phone": "9876543210",
+      "password_hash": "16bd550c156f64f51988335ae46e51e1:$2e3f40adaa77cc6ebbeae3598c8931e956dd9020aacbea153af53680ed51b0a1",
+      "role": "FARMER",
+      "location": "Nashik, Maharashtra",
+      "main_crop": "Tomato",
+      "preferred_language": "en",
+      "created_at": "2026-09-01 10:00 AM"
+    },
+    {
+      "id": "USR-EXPERT-1",
+      "name": "Dr. V. K. Sharma",
+      "phone": "9999988888",
+      "password_hash": "9cb6ce426ab786ea1e3542c3288b7fa6:$3c2a0225b32823736cf9514b9461e3eeba2dbe2addcb8d270f43d1f12291566c",
+      "role": "EXPERT",
+      "location": "Agricultural Research Station, Niphad",
+      "main_crop": "All Crops",
+      "preferred_language": "en",
+      "created_at": "2026-09-01 10:00 AM"
+    }
+  ],
+  "expert_requests": [
+    {
+      "id": "KS-8951",
+      "farmer_id": null,
+      "farmer_name": "dheer",
+      "phone": "9876543210",
+      "location": "Khetwādi",
+      "crop": "Tomato",
+      "problem_category": "Unresolved Guided Inquiry",
+      "description": "yellow leaf",
+      "image_url": null,
+      "collected_inputs": {},
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [
+        {
+          "id": "EQ-220647A9",
+          "request_id": "KS-8951",
+          "question": "for how long??",
+          "question_type": "text",
+          "options": null,
+          "created_at": "2026-09-12 05:47 PM"
+        }
+      ],
+      "answers": [
+        {
+          "id": "EA-5F802215",
+          "question_id": "EQ-220647A9",
+          "user_id": "9876543210",
+          "answer": "3 days",
+          "created_at": "2026-09-12 05:48 PM"
+        }
+      ],
+      "created_at": "2026-09-12 05:47 PM"
+    },
+    {
+      "id": "KS-8950",
+      "farmer_id": null,
+      "farmer_name": "Ramesh Patil",
+      "phone": "9876543210",
+      "location": "Nashik",
+      "crop": "Tomato",
+      "problem_category": "Agricultural Query",
+      "description": "Yellow leaf spots spreading rapidly across lower canopy.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "disease_scan",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "In Review",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [
+        {
+          "id": "EQ-C13AB47F",
+          "request_id": "KS-8950",
+          "question": "How quickly is the leaf spotting spreading?",
+          "question_type": "multiple_choice",
+          "options": [
+            "Slowly",
+            "Moderately",
+            "Rapidly (within 2 days)"
+          ],
+          "created_at": "2026-09-12 05:12 PM"
+        }
+      ],
+      "answers": [
+        {
+          "id": "EA-21E65963",
+          "question_id": "EQ-C13AB47F",
+          "user_id": null,
+          "answer": "Rapidly (within 2 days)",
+          "created_at": "2026-09-12 05:12 PM"
+        }
+      ],
+      "created_at": "2026-09-12 05:12 PM"
+    },
+    {
+      "id": "KS-8949",
+      "farmer_id": null,
+      "farmer_name": "Vijay Shinde",
+      "phone": "9811223344",
+      "location": "Nashik",
+      "crop": "Cotton",
+      "problem_category": "Pest Problem",
+      "description": "Whiteflies under leaf surface expanding.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": "Spray Pyriproxyfen 10% EC @ 2 ml/L of water.",
+      "expert_name": "Dr. Patil (Agronomist)",
+      "internal_notes": "Assigned to Dr. Patil",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 05:12 PM"
+    },
+    {
+      "id": "KS-8948",
+      "farmer_id": null,
+      "farmer_name": "Suresh Patel",
+      "phone": "9876543210",
+      "location": "Pune, Maharashtra",
+      "crop": "Wheat",
+      "problem_category": "Growth Problem",
+      "description": "Plants turning pale yellow at root tips.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Pending",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 05:12 PM"
+    },
+    {
+      "id": "KS-8947",
+      "farmer_id": null,
+      "farmer_name": "dheer",
+      "phone": "9876543210",
+      "location": "Khetwādi",
+      "crop": "Tomato",
+      "problem_category": "Pest Problem",
+      "description": "ihikj",
+      "image_url": null,
+      "collected_inputs": {
+        "crop": "Tomato",
+        "symptom": "Holes inside fruit / pod borer rot",
+        "duration": "1-3 days"
+      },
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Pending",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 04:54 PM"
+    },
+    {
+      "id": "KS-8946",
+      "farmer_id": null,
+      "farmer_name": "Ramesh Patil",
+      "phone": "9876543210",
+      "location": "Nashik",
+      "crop": "Tomato",
+      "problem_category": "Agricultural Query",
+      "description": "Yellow leaf spots spreading rapidly across lower canopy.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "disease_scan",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "In Review",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [
+        {
+          "id": "EQ-AFDFEEE0",
+          "request_id": "KS-8946",
+          "question": "How quickly is the leaf spotting spreading?",
+          "question_type": "multiple_choice",
+          "options": [
+            "Slowly",
+            "Moderately",
+            "Rapidly (within 2 days)"
+          ],
+          "created_at": "2026-09-12 04:25 PM"
+        }
+      ],
+      "answers": [
+        {
+          "id": "EA-5EFF0676",
+          "question_id": "EQ-AFDFEEE0",
+          "user_id": null,
+          "answer": "Rapidly (within 2 days)",
+          "created_at": "2026-09-12 04:25 PM"
+        }
+      ],
+      "created_at": "2026-09-12 04:25 PM"
+    },
+    {
+      "id": "KS-8945",
+      "farmer_id": null,
+      "farmer_name": "Vijay Shinde",
+      "phone": "9811223344",
+      "location": "Nashik",
+      "crop": "Cotton",
+      "problem_category": "Pest Problem",
+      "description": "Whiteflies under leaf surface expanding.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": "Spray Pyriproxyfen 10% EC @ 2 ml/L of water.",
+      "expert_name": "Dr. Patil (Agronomist)",
+      "internal_notes": "Assigned to Dr. Patil",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 04:25 PM"
+    },
+    {
+      "id": "KS-8944",
+      "farmer_id": null,
+      "farmer_name": "Suresh Patel",
+      "phone": "9876543210",
+      "location": "Pune, Maharashtra",
+      "crop": "Wheat",
+      "problem_category": "Growth Problem",
+      "description": "Plants turning pale yellow at root tips.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Pending",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 04:25 PM"
+    },
+    {
+      "id": "KS-8943",
+      "farmer_id": null,
+      "farmer_name": "Ramesh Patil",
+      "phone": "9876543210",
+      "location": "Nashik",
+      "crop": "Tomato",
+      "problem_category": "Agricultural Query",
+      "description": "Yellow leaf spots spreading rapidly across lower canopy.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "disease_scan",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "In Review",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [
+        {
+          "id": "EQ-65AB70DB",
+          "request_id": "KS-8943",
+          "question": "How quickly is the leaf spotting spreading?",
+          "question_type": "multiple_choice",
+          "options": [
+            "Slowly",
+            "Moderately",
+            "Rapidly (within 2 days)"
+          ],
+          "created_at": "2026-09-12 12:49 PM"
+        }
+      ],
+      "answers": [
+        {
+          "id": "EA-A83CC1DA",
+          "question_id": "EQ-65AB70DB",
+          "user_id": null,
+          "answer": "Rapidly (within 2 days)",
+          "created_at": "2026-09-12 12:49 PM"
+        }
+      ],
+      "created_at": "2026-09-12 12:49 PM"
+    },
+    {
+      "id": "KS-8942",
+      "farmer_id": null,
+      "farmer_name": "Vijay Shinde",
+      "phone": "9811223344",
+      "location": "Nashik",
+      "crop": "Cotton",
+      "problem_category": "Pest Problem",
+      "description": "Whiteflies under leaf surface expanding.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": "Spray Pyriproxyfen 10% EC @ 2 ml/L of water.",
+      "expert_name": "Dr. Patil (Agronomist)",
+      "internal_notes": "Assigned to Dr. Patil",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:49 PM"
+    },
+    {
+      "id": "KS-8941",
+      "farmer_id": null,
+      "farmer_name": "Suresh Patel",
+      "phone": "9876543210",
+      "location": "Pune, Maharashtra",
+      "crop": "Wheat",
+      "problem_category": "Growth Problem",
+      "description": "Plants turning pale yellow at root tips.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Pending",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:49 PM"
+    },
+    {
+      "id": "KS-8940",
+      "farmer_id": null,
+      "farmer_name": "Ramesh Patil",
+      "phone": "9876543210",
+      "location": "Nashik",
+      "crop": "Tomato",
+      "problem_category": "Agricultural Query",
+      "description": "Yellow leaf spots spreading rapidly across lower canopy.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "disease_scan",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "In Review",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [
+        {
+          "id": "EQ-698A251C",
+          "request_id": "KS-8940",
+          "question": "How quickly is the leaf spotting spreading?",
+          "question_type": "multiple_choice",
+          "options": [
+            "Slowly",
+            "Moderately",
+            "Rapidly (within 2 days)"
+          ],
+          "created_at": "2026-09-12 12:45 PM"
+        }
+      ],
+      "answers": [
+        {
+          "id": "EA-8BA045B7",
+          "question_id": "EQ-698A251C",
+          "user_id": null,
+          "answer": "Rapidly (within 2 days)",
+          "created_at": "2026-09-12 12:45 PM"
+        }
+      ],
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "KS-8939",
+      "farmer_id": null,
+      "farmer_name": "Vijay Shinde",
+      "phone": "9811223344",
+      "location": "Nashik",
+      "crop": "Cotton",
+      "problem_category": "Pest Problem",
+      "description": "Whiteflies under leaf surface expanding.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": "Spray Pyriproxyfen 10% EC @ 2 ml/L of water.",
+      "expert_name": "Dr. Patil (Agronomist)",
+      "internal_notes": "Assigned to Dr. Patil",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "KS-8938",
+      "farmer_id": null,
+      "farmer_name": "Suresh Patel",
+      "phone": "9876543210",
+      "location": "Pune, Maharashtra",
+      "crop": "Wheat",
+      "problem_category": "Growth Problem",
+      "description": "Plants turning pale yellow at root tips.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Pending",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "KS-8937",
+      "farmer_id": null,
+      "farmer_name": "Ramesh Patil",
+      "phone": "9876543210",
+      "location": "Nashik",
+      "crop": "Tomato",
+      "problem_category": "Agricultural Query",
+      "description": "Yellow leaf spots spreading rapidly across lower canopy.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "disease_scan",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "In Review",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [
+        {
+          "id": "EQ-D6EB41D1",
+          "request_id": "KS-8937",
+          "question": "How quickly is the leaf spotting spreading?",
+          "question_type": "multiple_choice",
+          "options": [
+            "Slowly",
+            "Moderately",
+            "Rapidly (within 2 days)"
+          ],
+          "created_at": "2026-09-12 12:45 PM"
+        }
+      ],
+      "answers": [
+        {
+          "id": "EA-B6AB6847",
+          "question_id": "EQ-D6EB41D1",
+          "user_id": null,
+          "answer": "Rapidly (within 2 days)",
+          "created_at": "2026-09-12 12:45 PM"
+        }
+      ],
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "KS-8936",
+      "farmer_id": null,
+      "farmer_name": "Vijay Shinde",
+      "phone": "9811223344",
+      "location": "Nashik",
+      "crop": "Cotton",
+      "problem_category": "Pest Problem",
+      "description": "Whiteflies under leaf surface expanding.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": "Spray Pyriproxyfen 10% EC @ 2 ml/L of water.",
+      "expert_name": "Dr. Patil (Agronomist)",
+      "internal_notes": "Assigned to Dr. Patil",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "KS-8935",
+      "farmer_id": null,
+      "farmer_name": "Suresh Patel",
+      "phone": "9876543210",
+      "location": "Pune, Maharashtra",
+      "crop": "Wheat",
+      "problem_category": "Growth Problem",
+      "description": "Plants turning pale yellow at root tips.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Pending",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "KS-8934",
+      "farmer_id": null,
+      "farmer_name": "Vijay Shinde",
+      "phone": "9811223344",
+      "location": "Nashik",
+      "crop": "Cotton",
+      "problem_category": "Pest Problem",
+      "description": "Whiteflies under leaf surface expanding.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": "Spray Pyriproxyfen 10% EC @ 2 ml/L of water.",
+      "expert_name": "Dr. Patil (Agronomist)",
+      "internal_notes": "Assigned to Dr. Patil",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "KS-8933",
+      "farmer_id": null,
+      "farmer_name": "Suresh Patel",
+      "phone": "9876543210",
+      "location": "Pune, Maharashtra",
+      "crop": "Wheat",
+      "problem_category": "Growth Problem",
+      "description": "Plants turning pale yellow at root tips.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Pending",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "KS-8932",
+      "farmer_id": null,
+      "farmer_name": "Ramesh Patil",
+      "phone": "9876543210",
+      "location": "Nashik",
+      "crop": "Tomato",
+      "problem_category": "Agricultural Query",
+      "description": "Yellow leaf spots spreading rapidly across lower canopy.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "disease_scan",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "In Review",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [
+        {
+          "id": "EQ-3567B792",
+          "request_id": "KS-8932",
+          "question": "How quickly is the leaf spotting spreading?",
+          "question_type": "multiple_choice",
+          "options": [
+            "Slowly",
+            "Moderately",
+            "Rapidly (within 2 days)"
+          ],
+          "created_at": "2026-09-12 12:44 PM"
+        }
+      ],
+      "answers": [
+        {
+          "id": "EA-9F78823B",
+          "question_id": "EQ-3567B792",
+          "user_id": null,
+          "answer": "Rapidly (within 2 days)",
+          "created_at": "2026-09-12 12:44 PM"
+        }
+      ],
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "KS-8931",
+      "farmer_id": null,
+      "farmer_name": "Vijay Shinde",
+      "phone": "9811223344",
+      "location": "Nashik",
+      "crop": "Cotton",
+      "problem_category": "Pest Problem",
+      "description": "Whiteflies under leaf surface expanding.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": "Spray Pyriproxyfen 10% EC @ 2 ml/L of water.",
+      "expert_name": "Dr. Patil (Agronomist)",
+      "internal_notes": "Assigned to Dr. Patil",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "KS-8930",
+      "farmer_id": null,
+      "farmer_name": "Suresh Patel",
+      "phone": "9876543210",
+      "location": "Pune, Maharashtra",
+      "crop": "Wheat",
+      "problem_category": "Growth Problem",
+      "description": "Plants turning pale yellow at root tips.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Pending",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "KS-8929",
+      "farmer_id": null,
+      "farmer_name": "Ramesh Patil",
+      "phone": "9876543210",
+      "location": "Nashik",
+      "crop": "Tomato",
+      "problem_category": "Agricultural Query",
+      "description": "Yellow leaf spots spreading rapidly across lower canopy.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "disease_scan",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "In Review",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [
+        {
+          "id": "EQ-A6D4EA4E",
+          "request_id": "KS-8929",
+          "question": "How quickly is the leaf spotting spreading?",
+          "question_type": "multiple_choice",
+          "options": [
+            "Slowly",
+            "Moderately",
+            "Rapidly (within 2 days)"
+          ],
+          "created_at": "2026-09-12 12:44 PM"
+        }
+      ],
+      "answers": [
+        {
+          "id": "EA-5E641100",
+          "question_id": "EQ-A6D4EA4E",
+          "user_id": null,
+          "answer": "Rapidly (within 2 days)",
+          "created_at": "2026-09-12 12:44 PM"
+        }
+      ],
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "KS-8928",
+      "farmer_id": null,
+      "farmer_name": "Vijay Shinde",
+      "phone": "9811223344",
+      "location": "Nashik",
+      "crop": "Cotton",
+      "problem_category": "Pest Problem",
+      "description": "Whiteflies under leaf surface expanding.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": "Spray Pyriproxyfen 10% EC @ 2 ml/L of water.",
+      "expert_name": "Dr. Patil (Agronomist)",
+      "internal_notes": "Assigned to Dr. Patil",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "KS-8927",
+      "farmer_id": null,
+      "farmer_name": "Suresh Patel",
+      "phone": "9876543210",
+      "location": "Pune, Maharashtra",
+      "crop": "Wheat",
+      "problem_category": "Growth Problem",
+      "description": "Plants turning pale yellow at root tips.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Pending",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "KS-8926",
+      "farmer_id": null,
+      "farmer_name": "Ramesh Patil",
+      "phone": "9876543210",
+      "location": "Nashik",
+      "crop": "Tomato",
+      "problem_category": "Agricultural Query",
+      "description": "Yellow leaf spots spreading rapidly across lower canopy.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "disease_scan",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "In Review",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [
+        {
+          "id": "EQ-71D0D66F",
+          "request_id": "KS-8926",
+          "question": "How quickly is the leaf spotting spreading?",
+          "question_type": "multiple_choice",
+          "options": [
+            "Slowly",
+            "Moderately",
+            "Rapidly (within 2 days)"
+          ],
+          "created_at": "2026-09-12 12:43 PM"
+        }
+      ],
+      "answers": [
+        {
+          "id": "EA-559DF7A4",
+          "question_id": "EQ-71D0D66F",
+          "user_id": null,
+          "answer": "Rapidly (within 2 days)",
+          "created_at": "2026-09-12 12:43 PM"
+        }
+      ],
+      "created_at": "2026-09-12 12:43 PM"
+    },
+    {
+      "id": "KS-8925",
+      "farmer_id": null,
+      "farmer_name": "Vijay Shinde",
+      "phone": "9811223344",
+      "location": "Nashik",
+      "crop": "Cotton",
+      "problem_category": "Pest Problem",
+      "description": "Whiteflies under leaf surface expanding.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": "Spray Pyriproxyfen 10% EC @ 2 ml/L of water.",
+      "expert_name": "Dr. Patil (Agronomist)",
+      "internal_notes": "Assigned to Dr. Patil",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:43 PM"
+    },
+    {
+      "id": "KS-8924",
+      "farmer_id": null,
+      "farmer_name": "Suresh Patel",
+      "phone": "9876543210",
+      "location": "Pune, Maharashtra",
+      "crop": "Wheat",
+      "problem_category": "Growth Problem",
+      "description": "Plants turning pale yellow at root tips.",
+      "image_url": null,
+      "collected_inputs": null,
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Pending",
+      "expert_id": null,
+      "expert_response": null,
+      "expert_name": null,
+      "internal_notes": null,
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-12 12:43 PM"
+    },
+    {
+      "id": "KS-8921",
+      "farmer_id": null,
+      "farmer_name": "Ramesh Patil",
+      "phone": "9876543210",
+      "location": "Nashik, Maharashtra",
+      "crop": "Tomato",
+      "problem_category": "Leaf / Plant Symptoms",
+      "description": "Leaves turning dark yellow with concentric brown rings. Lower foliage affected rapidly.",
+      "image_url": null,
+      "collected_inputs": {
+        "crop": "Tomato",
+        "symptom": "Yellow leaves",
+        "duration": "4-7 days"
+      },
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "High",
+      "status": "In Review",
+      "expert_id": null,
+      "expert_response": "Agronomist Dr. V. K. Sharma reviewing leaf sample details.",
+      "expert_name": "Dr. V. K. Sharma (Senior Agronomist)",
+      "internal_notes": "High humidity area near Niphad. Check for early blight spores.",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-08 10:30 AM"
+    },
+    {
+      "id": "KS-8814",
+      "farmer_id": null,
+      "farmer_name": "Suresh Deshmukh",
+      "phone": "9822114455",
+      "location": "Pune, Maharashtra",
+      "crop": "Rice",
+      "problem_category": "Pest Problem",
+      "description": "Small brown hoppers multiplying at base of rice tillers.",
+      "image_url": null,
+      "collected_inputs": {
+        "crop": "Rice",
+        "symptom": "Base hopper infestation"
+      },
+      "request_type": "general",
+      "disease_scan_id": null,
+      "gemini_analysis": null,
+      "weather_context": null,
+      "priority": "Normal",
+      "status": "Resolved",
+      "expert_id": null,
+      "expert_response": "Apply Triflumezopyrim 10% SC @ 94 ml/acre in standing water. Maintain proper drainage.",
+      "expert_name": "Dr. S. K. Deshmukh (Pest Specialist)",
+      "internal_notes": "Resolved via phone consultation. Field officer notified.",
+      "questions": [],
+      "answers": [],
+      "created_at": "2026-09-05 02:15 PM"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "NOTIF-160",
+      "farmer_id": null,
+      "request_id": "KS-8951",
+      "title": "Request Status: Resolved",
+      "message": "Your Expert Request #KS-8951 is now 'Resolved'.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 05:48 PM"
+    },
+    {
+      "id": "NOTIF-255",
+      "farmer_id": null,
+      "request_id": "KS-8951",
+      "title": "Expert Question Received",
+      "message": "Agronomist asked a question regarding Request #KS-8951: 'for how long??'",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "2026-09-12 05:47 PM"
+    },
+    {
+      "id": "NOTIF-157",
+      "farmer_id": null,
+      "request_id": "KS-8951",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8951 for Tomato submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 05:47 PM"
+    },
+    {
+      "id": "NOTIF-253",
+      "farmer_id": null,
+      "request_id": "KS-8950",
+      "title": "Expert Question Received",
+      "message": "Agronomist asked a question regarding Request #KS-8950: 'How quickly is the leaf spotting spreading?'",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "2026-09-12 05:12 PM"
+    },
+    {
+      "id": "NOTIF-155",
+      "farmer_id": null,
+      "request_id": "KS-8950",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8950 for Tomato submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 05:12 PM"
+    },
+    {
+      "id": "NOTIF-156",
+      "farmer_id": null,
+      "request_id": "KS-8949",
+      "title": "Expert Recommendation Received!",
+      "message": "Dr. Patil (Agronomist) responded to your request #KS-8949.",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "Just now"
+    },
+    {
+      "id": "NOTIF-154",
+      "farmer_id": null,
+      "request_id": "KS-8949",
+      "title": "Request Status: In Review",
+      "message": "Your Expert Request #KS-8949 is now 'In Review'.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 05:12 PM"
+    },
+    {
+      "id": "NOTIF-152",
+      "farmer_id": null,
+      "request_id": "KS-8949",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8949 for Cotton submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 05:12 PM"
+    },
+    {
+      "id": "NOTIF-151",
+      "farmer_id": null,
+      "request_id": "KS-8948",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8948 for Wheat submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 05:12 PM"
+    },
+    {
+      "id": "NOTIF-150",
+      "farmer_id": null,
+      "request_id": "KS-8947",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8947 for Tomato submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 04:54 PM"
+    },
+    {
+      "id": "NOTIF-246",
+      "farmer_id": null,
+      "request_id": "KS-8946",
+      "title": "Expert Question Received",
+      "message": "Agronomist asked a question regarding Request #KS-8946: 'How quickly is the leaf spotting spreading?'",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "2026-09-12 04:25 PM"
+    },
+    {
+      "id": "NOTIF-148",
+      "farmer_id": null,
+      "request_id": "KS-8946",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8946 for Tomato submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 04:25 PM"
+    },
+    {
+      "id": "NOTIF-149",
+      "farmer_id": null,
+      "request_id": "KS-8945",
+      "title": "Expert Recommendation Received!",
+      "message": "Dr. Patil (Agronomist) responded to your request #KS-8945.",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "Just now"
+    },
+    {
+      "id": "NOTIF-147",
+      "farmer_id": null,
+      "request_id": "KS-8945",
+      "title": "Request Status: In Review",
+      "message": "Your Expert Request #KS-8945 is now 'In Review'.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 04:25 PM"
+    },
+    {
+      "id": "NOTIF-145",
+      "farmer_id": null,
+      "request_id": "KS-8945",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8945 for Cotton submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 04:25 PM"
+    },
+    {
+      "id": "NOTIF-144",
+      "farmer_id": null,
+      "request_id": "KS-8944",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8944 for Wheat submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 04:25 PM"
+    },
+    {
+      "id": "NOTIF-240",
+      "farmer_id": null,
+      "request_id": "KS-8943",
+      "title": "Expert Question Received",
+      "message": "Agronomist asked a question regarding Request #KS-8943: 'How quickly is the leaf spotting spreading?'",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "2026-09-12 12:49 PM"
+    },
+    {
+      "id": "NOTIF-142",
+      "farmer_id": null,
+      "request_id": "KS-8943",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8943 for Tomato submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:49 PM"
+    },
+    {
+      "id": "NOTIF-143",
+      "farmer_id": null,
+      "request_id": "KS-8942",
+      "title": "Expert Recommendation Received!",
+      "message": "Dr. Patil (Agronomist) responded to your request #KS-8942.",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "Just now"
+    },
+    {
+      "id": "NOTIF-141",
+      "farmer_id": null,
+      "request_id": "KS-8942",
+      "title": "Request Status: In Review",
+      "message": "Your Expert Request #KS-8942 is now 'In Review'.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:49 PM"
+    },
+    {
+      "id": "NOTIF-139",
+      "farmer_id": null,
+      "request_id": "KS-8942",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8942 for Cotton submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:49 PM"
+    },
+    {
+      "id": "NOTIF-138",
+      "farmer_id": null,
+      "request_id": "KS-8941",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8941 for Wheat submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:49 PM"
+    },
+    {
+      "id": "NOTIF-234",
+      "farmer_id": null,
+      "request_id": "KS-8940",
+      "title": "Expert Question Received",
+      "message": "Agronomist asked a question regarding Request #KS-8940: 'How quickly is the leaf spotting spreading?'",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "NOTIF-136",
+      "farmer_id": null,
+      "request_id": "KS-8940",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8940 for Tomato submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "NOTIF-137",
+      "farmer_id": null,
+      "request_id": "KS-8939",
+      "title": "Expert Recommendation Received!",
+      "message": "Dr. Patil (Agronomist) responded to your request #KS-8939.",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "Just now"
+    },
+    {
+      "id": "NOTIF-135",
+      "farmer_id": null,
+      "request_id": "KS-8939",
+      "title": "Request Status: In Review",
+      "message": "Your Expert Request #KS-8939 is now 'In Review'.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "NOTIF-133",
+      "farmer_id": null,
+      "request_id": "KS-8939",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8939 for Cotton submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "NOTIF-132",
+      "farmer_id": null,
+      "request_id": "KS-8938",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8938 for Wheat submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "NOTIF-228",
+      "farmer_id": null,
+      "request_id": "KS-8937",
+      "title": "Expert Question Received",
+      "message": "Agronomist asked a question regarding Request #KS-8937: 'How quickly is the leaf spotting spreading?'",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "NOTIF-130",
+      "farmer_id": null,
+      "request_id": "KS-8937",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8937 for Tomato submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "NOTIF-131",
+      "farmer_id": null,
+      "request_id": "KS-8936",
+      "title": "Expert Recommendation Received!",
+      "message": "Dr. Patil (Agronomist) responded to your request #KS-8936.",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "Just now"
+    },
+    {
+      "id": "NOTIF-129",
+      "farmer_id": null,
+      "request_id": "KS-8936",
+      "title": "Request Status: In Review",
+      "message": "Your Expert Request #KS-8936 is now 'In Review'.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "NOTIF-127",
+      "farmer_id": null,
+      "request_id": "KS-8936",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8936 for Cotton submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "NOTIF-126",
+      "farmer_id": null,
+      "request_id": "KS-8935",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8935 for Wheat submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "NOTIF-127",
+      "farmer_id": null,
+      "request_id": "KS-8934",
+      "title": "Expert Recommendation Received!",
+      "message": "Dr. Patil (Agronomist) responded to your request #KS-8934.",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "Just now"
+    },
+    {
+      "id": "NOTIF-125",
+      "farmer_id": null,
+      "request_id": "KS-8934",
+      "title": "Request Status: In Review",
+      "message": "Your Expert Request #KS-8934 is now 'In Review'.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-123",
+      "farmer_id": null,
+      "request_id": "KS-8934",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8934 for Cotton submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-122",
+      "farmer_id": null,
+      "request_id": "KS-8933",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8933 for Wheat submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-218",
+      "farmer_id": null,
+      "request_id": "KS-8932",
+      "title": "Expert Question Received",
+      "message": "Agronomist asked a question regarding Request #KS-8932: 'How quickly is the leaf spotting spreading?'",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-120",
+      "farmer_id": null,
+      "request_id": "KS-8932",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8932 for Tomato submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-121",
+      "farmer_id": null,
+      "request_id": "KS-8931",
+      "title": "Expert Recommendation Received!",
+      "message": "Dr. Patil (Agronomist) responded to your request #KS-8931.",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "Just now"
+    },
+    {
+      "id": "NOTIF-119",
+      "farmer_id": null,
+      "request_id": "KS-8931",
+      "title": "Request Status: In Review",
+      "message": "Your Expert Request #KS-8931 is now 'In Review'.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-117",
+      "farmer_id": null,
+      "request_id": "KS-8931",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8931 for Cotton submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-116",
+      "farmer_id": null,
+      "request_id": "KS-8930",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8930 for Wheat submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-212",
+      "farmer_id": null,
+      "request_id": "KS-8929",
+      "title": "Expert Question Received",
+      "message": "Agronomist asked a question regarding Request #KS-8929: 'How quickly is the leaf spotting spreading?'",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-114",
+      "farmer_id": null,
+      "request_id": "KS-8929",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8929 for Tomato submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-115",
+      "farmer_id": null,
+      "request_id": "KS-8928",
+      "title": "Expert Recommendation Received!",
+      "message": "Dr. Patil (Agronomist) responded to your request #KS-8928.",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "Just now"
+    },
+    {
+      "id": "NOTIF-113",
+      "farmer_id": null,
+      "request_id": "KS-8928",
+      "title": "Request Status: In Review",
+      "message": "Your Expert Request #KS-8928 is now 'In Review'.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-111",
+      "farmer_id": null,
+      "request_id": "KS-8928",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8928 for Cotton submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-110",
+      "farmer_id": null,
+      "request_id": "KS-8927",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8927 for Wheat submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "NOTIF-206",
+      "farmer_id": null,
+      "request_id": "KS-8926",
+      "title": "Expert Question Received",
+      "message": "Agronomist asked a question regarding Request #KS-8926: 'How quickly is the leaf spotting spreading?'",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "2026-09-12 12:43 PM"
+    },
+    {
+      "id": "NOTIF-108",
+      "farmer_id": null,
+      "request_id": "KS-8926",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8926 for Tomato submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:43 PM"
+    },
+    {
+      "id": "NOTIF-109",
+      "farmer_id": null,
+      "request_id": "KS-8925",
+      "title": "Expert Recommendation Received!",
+      "message": "Dr. Patil (Agronomist) responded to your request #KS-8925.",
+      "type": "expert_reply",
+      "is_read": false,
+      "created_at": "Just now"
+    },
+    {
+      "id": "NOTIF-107",
+      "farmer_id": null,
+      "request_id": "KS-8925",
+      "title": "Request Status: In Review",
+      "message": "Your Expert Request #KS-8925 is now 'In Review'.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:43 PM"
+    },
+    {
+      "id": "NOTIF-105",
+      "farmer_id": null,
+      "request_id": "KS-8925",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8925 for Cotton submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:43 PM"
+    },
+    {
+      "id": "NOTIF-104",
+      "farmer_id": null,
+      "request_id": "KS-8924",
+      "title": "Expert Request Submitted",
+      "message": "Request #KS-8924 for Wheat submitted successfully. An agronomist will review shortly.",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-12 12:43 PM"
+    },
+    {
+      "id": "NOTIF-101",
+      "farmer_id": null,
+      "request_id": "KS-8921",
+      "title": "Expert Request Assigned",
+      "message": "Your request #KS-8921 has been assigned to Dr. V. K. Sharma (Status: In Review).",
+      "type": "status_update",
+      "is_read": false,
+      "created_at": "2026-09-08 10:35 AM"
+    }
+  ],
+  "disease_scans": [
+    {
+      "scan_id": "SCAN-EF326E6B",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Plant",
+      "predicted_issue": "Possible Unknown Plant Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Plant Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "28.6°C, Overcast Clouds, Humidity 27%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Plant cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-EEEC31B0",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "23.9°C, Overcast Clouds, Humidity 90%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary assessment and advisory based on visual features. Not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-6AA64E93",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Dragonfruit",
+      "predicted_issue": "Possible Unknown Dragonfruit Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Dragonfruit Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "23.9°C, Overcast Clouds, Humidity 90%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Dragonfruit cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-A4C9B228",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "23.9°C, Overcast Clouds, Humidity 90%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary assessment and advisory based on visual features. Not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-1E486C4D",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "31.0°C, Light Rain, Humidity 66%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary assessment and advisory based on visual features. Not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-1845ED8A",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Plant",
+      "predicted_issue": "Possible Unknown Plant Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Plant Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "29.7°C, Broken Clouds, Humidity 26%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Plant cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-7CBAC2ED",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.5°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary assessment and advisory based on visual features. Not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-C9B129BC",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Dragonfruit",
+      "predicted_issue": "Possible Unknown Dragonfruit Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Dragonfruit Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "24.5°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Dragonfruit cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-D0D0CC4E",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.5°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary assessment and advisory based on visual features. Not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-5BDA6B16",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Plant",
+      "predicted_issue": "Possible Unknown Plant Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Plant Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "30.2°C, Broken Clouds, Humidity 26%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Plant cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-31E159D7",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary assessment and advisory based on visual features. Not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-F7EBDDFC",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Dragonfruit",
+      "predicted_issue": "Possible Unknown Dragonfruit Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Dragonfruit Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Dragonfruit cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-AB91A528",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary assessment and advisory based on visual features. Not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-0A2763A3",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Plant",
+      "predicted_issue": "Possible Unknown Plant Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Plant Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "30.2°C, Broken Clouds, Humidity 26%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Plant cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-6ABC2A25",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary assessment and advisory based on visual features. Not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-C08865C3",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Dragonfruit",
+      "predicted_issue": "Possible Unknown Dragonfruit Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Dragonfruit Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Dragonfruit cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-6F91E04E",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary assessment and advisory based on visual features. Not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-4EAF53AC",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Plant",
+      "predicted_issue": "Possible Unknown Plant Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Plant Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "30.2°C, Broken Clouds, Humidity 26%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Plant cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-D6F907C0",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary visual assessment and is not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-5971C1D0",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Dragonfruit",
+      "predicted_issue": "Possible Unknown Dragonfruit Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Dragonfruit Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Dragonfruit cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-D07F5423",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary visual assessment and is not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-05143327",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Dragonfruit",
+      "predicted_issue": "Possible Unknown Dragonfruit Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Dragonfruit Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Dragonfruit cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-49FED4ED",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary visual assessment and is not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-0DC09170",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Plant",
+      "predicted_issue": "Possible Unknown Plant Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Plant Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "30.2°C, Broken Clouds, Humidity 26%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Plant cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-5AD5C994",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary visual assessment and is not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-E57C7387",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Dragonfruit",
+      "predicted_issue": "Possible Unknown Dragonfruit Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Dragonfruit Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Dragonfruit cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-571CF027",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary visual assessment and is not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-987E37E0",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Plant",
+      "predicted_issue": "Possible Unknown Plant Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Plant Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "30.2°C, Broken Clouds, Humidity 26%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Plant cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-06B28B7D",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary visual assessment and is not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-1C3A9AAE",
+      "image_url": null,
+      "image_quality": "poor",
+      "crop_name": "Unknown Dragonfruit",
+      "predicted_issue": "Possible Unknown Dragonfruit Foliar Stress",
+      "confidence_score": 45.0,
+      "uncertainty_level": "High",
+      "visible_symptoms": [
+        "Unclear visual feature resolution"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Dragonfruit Foliar Stress",
+          "confidence": 45.0,
+          "reason": "Low visual feature match due to image quality or unlisted crop."
+        }
+      ],
+      "severity": "Low",
+      "possible_causes": [
+        "Unclear visual characteristics"
+      ],
+      "recommended_next_steps": [
+        "Retake photo in clear sunlight",
+        "Consult an agronomist expert"
+      ],
+      "preventive_measures": [
+        "Avoid unverified sprays"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Dragonfruit cross-referenced with knowledge base.",
+      "disclaimer": "Unable to reliably identify issue. Preliminary visual assessment.",
+      "requires_expert": true
+    },
+    {
+      "scan_id": "SCAN-75900B8B",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with knowledge base.",
+      "disclaimer": "Preliminary visual assessment and is not a confirmed laboratory diagnosis.",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-D10B3ABC",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Unknown Plant",
+      "predicted_issue": "Possible Unknown Plant Leaf Anomaly",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Foliar discoloration",
+        "Mild wilting"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Plant Leaf Anomaly",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Environmental water/heat stress or initial fungal exposure"
+      ],
+      "recommended_next_steps": [
+        "Check soil moisture",
+        "Submit request to Agronomist for expert review"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing",
+        "Avoid overwatering"
+      ],
+      "weather_context": "30.2°C, Broken Clouds, Humidity 26%, Rain Prob 40%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Plant cross-referenced with agricultural knowledge base.",
+      "disclaimer": "Preliminary image evaluation. (Gemini API key not configured in backend environment.)",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-6AA9EA6B",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing",
+        "Avoid overwatering"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with agricultural knowledge base.",
+      "disclaimer": "Preliminary image evaluation. (Gemini API key not configured in backend environment.)",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-8CEEAAA7",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Unknown Dragonfruit",
+      "predicted_issue": "Possible Unknown Dragonfruit Leaf Anomaly",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Foliar discoloration",
+        "Mild wilting"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Unknown Dragonfruit Leaf Anomaly",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Environmental water/heat stress or initial fungal exposure"
+      ],
+      "recommended_next_steps": [
+        "Check soil moisture",
+        "Submit request to Agronomist for expert review"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing",
+        "Avoid overwatering"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Unknown Dragonfruit cross-referenced with agricultural knowledge base.",
+      "disclaimer": "Preliminary image evaluation. (Gemini API key not configured in backend environment.)",
+      "requires_expert": false
+    },
+    {
+      "scan_id": "SCAN-D2EFB7CD",
+      "image_url": null,
+      "image_quality": "good",
+      "crop_name": "Tomato",
+      "predicted_issue": "Possible Tomato Early Blight (Alternaria solani)",
+      "confidence_score": 74.0,
+      "uncertainty_level": "Medium",
+      "visible_symptoms": [
+        "Yellowing lower leaves",
+        "Dark concentric brown spots"
+      ],
+      "possible_issues": [
+        {
+          "name": "Possible Tomato Early Blight (Alternaria solani)",
+          "confidence": 74.0,
+          "reason": "Feature extraction matched against agricultural visual database."
+        }
+      ],
+      "severity": "Moderate",
+      "possible_causes": [
+        "Fungal spore germination in high air humidity"
+      ],
+      "recommended_next_steps": [
+        "Remove infected lower foliage",
+        "Apply Copper Oxychloride @ 3g/L or Mancozeb @ 2g/L"
+      ],
+      "preventive_measures": [
+        "Maintain optimal spacing",
+        "Avoid overwatering"
+      ],
+      "weather_context": "24.4°C, Light Rain, Humidity 89%, Rain Prob 85%",
+      "rule_advisory": "Rule Engine Verification: Observed symptoms for Tomato cross-referenced with agricultural knowledge base.",
+      "disclaimer": "Preliminary image evaluation. (Gemini API key not configured in backend environment.)",
+      "requires_expert": false
+    }
+  ],
+  "expert_questions": [
+    {
+      "id": "EQ-71D0D66F",
+      "request_id": "KS-8926",
+      "question": "How quickly is the leaf spotting spreading?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Slowly",
+        "Moderately",
+        "Rapidly (within 2 days)"
+      ],
+      "created_at": "2026-09-12 12:43 PM"
+    },
+    {
+      "id": "EQ-A6D4EA4E",
+      "request_id": "KS-8929",
+      "question": "How quickly is the leaf spotting spreading?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Slowly",
+        "Moderately",
+        "Rapidly (within 2 days)"
+      ],
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "EQ-3567B792",
+      "request_id": "KS-8932",
+      "question": "How quickly is the leaf spotting spreading?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Slowly",
+        "Moderately",
+        "Rapidly (within 2 days)"
+      ],
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "EQ-D6EB41D1",
+      "request_id": "KS-8937",
+      "question": "How quickly is the leaf spotting spreading?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Slowly",
+        "Moderately",
+        "Rapidly (within 2 days)"
+      ],
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "EQ-698A251C",
+      "request_id": "KS-8940",
+      "question": "How quickly is the leaf spotting spreading?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Slowly",
+        "Moderately",
+        "Rapidly (within 2 days)"
+      ],
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "EQ-65AB70DB",
+      "request_id": "KS-8943",
+      "question": "How quickly is the leaf spotting spreading?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Slowly",
+        "Moderately",
+        "Rapidly (within 2 days)"
+      ],
+      "created_at": "2026-09-12 12:49 PM"
+    },
+    {
+      "id": "EQ-AFDFEEE0",
+      "request_id": "KS-8946",
+      "question": "How quickly is the leaf spotting spreading?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Slowly",
+        "Moderately",
+        "Rapidly (within 2 days)"
+      ],
+      "created_at": "2026-09-12 04:25 PM"
+    },
+    {
+      "id": "EQ-C13AB47F",
+      "request_id": "KS-8950",
+      "question": "How quickly is the leaf spotting spreading?",
+      "question_type": "multiple_choice",
+      "options": [
+        "Slowly",
+        "Moderately",
+        "Rapidly (within 2 days)"
+      ],
+      "created_at": "2026-09-12 05:12 PM"
+    },
+    {
+      "id": "EQ-220647A9",
+      "request_id": "KS-8951",
+      "question": "for how long??",
+      "question_type": "text",
+      "options": null,
+      "created_at": "2026-09-12 05:47 PM"
+    }
+  ],
+  "expert_answers": [
+    {
+      "id": "EA-559DF7A4",
+      "question_id": "EQ-71D0D66F",
+      "user_id": null,
+      "answer": "Rapidly (within 2 days)",
+      "created_at": "2026-09-12 12:43 PM"
+    },
+    {
+      "id": "EA-5E641100",
+      "question_id": "EQ-A6D4EA4E",
+      "user_id": null,
+      "answer": "Rapidly (within 2 days)",
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "EA-9F78823B",
+      "question_id": "EQ-3567B792",
+      "user_id": null,
+      "answer": "Rapidly (within 2 days)",
+      "created_at": "2026-09-12 12:44 PM"
+    },
+    {
+      "id": "EA-B6AB6847",
+      "question_id": "EQ-D6EB41D1",
+      "user_id": null,
+      "answer": "Rapidly (within 2 days)",
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "EA-8BA045B7",
+      "question_id": "EQ-698A251C",
+      "user_id": null,
+      "answer": "Rapidly (within 2 days)",
+      "created_at": "2026-09-12 12:45 PM"
+    },
+    {
+      "id": "EA-A83CC1DA",
+      "question_id": "EQ-65AB70DB",
+      "user_id": null,
+      "answer": "Rapidly (within 2 days)",
+      "created_at": "2026-09-12 12:49 PM"
+    },
+    {
+      "id": "EA-5EFF0676",
+      "question_id": "EQ-AFDFEEE0",
+      "user_id": null,
+      "answer": "Rapidly (within 2 days)",
+      "created_at": "2026-09-12 04:25 PM"
+    },
+    {
+      "id": "EA-21E65963",
+      "question_id": "EQ-C13AB47F",
+      "user_id": null,
+      "answer": "Rapidly (within 2 days)",
+      "created_at": "2026-09-12 05:12 PM"
+    },
+    {
+      "id": "EA-5F802215",
+      "question_id": "EQ-220647A9",
+      "user_id": "9876543210",
+      "answer": "3 days",
+      "created_at": "2026-09-12 05:48 PM"
+    }
+  ],
+  "updated_at": "2026-09-12T19:10:34.279407"
+}

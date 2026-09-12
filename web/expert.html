@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kisan Sarthi - Expert Agronomist Portal</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      background-color: #f4f6f4;
+      min-height: 100vh;
+      display: block;
+      padding: 0;
+      color: #1a1c1c;
+    }
+    .portal-navbar {
+      background-color: #0d631b;
+      color: #ffffff;
+      padding: 16px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    .portal-brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 20px;
+      font-weight: 700;
+    }
+    .portal-container {
+      max-width: 1200px;
+      margin: 32px auto;
+      padding: 0 20px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      border: 1px solid #e8e8e8;
+    }
+    .stat-number {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0d631b;
+      margin-top: 4px;
+    }
+    .main-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 24px;
+    }
+    .request-list-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      border: 1px solid #e8e8e8;
+    }
+    .detail-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+      border: 1px solid #e8e8e8;
+      position: sticky;
+      top: 24px;
+    }
+    .filter-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .filter-btn {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1.5px solid #bfcaba;
+      background: none;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .filter-btn.active {
+      background: #2e7d32;
+      color: #ffffff;
+      border-color: #2e7d32;
+    }
+    .req-item {
+      padding: 16px;
+      border-radius: 12px;
+      border: 1px solid #e8e8e8;
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .req-item:hover, .req-item.selected {
+      border-color: #0d631b;
+      background: #f9fbf9;
+    }
+    .form-group {
+      margin-bottom: 16px;
+    }
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 14px;
+      margin-bottom: 6px;
+    }
+    .form-group textarea, .form-group select {
+      width: 100%;
+      padding: 12px;
+      border: 1.5px solid #bfcaba;
+      border-radius: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Expert Portal Navbar -->
+  <header class="portal-navbar">
+    <div class="portal-brand">
+      <span class="material-symbols-outlined" style="font-size: 32px;">support_agent</span>
+      <span>Kisan Sarthi — Expert Agronomist Portal</span>
+    </div>
+    <div style="display: flex; align-items: center; gap: 16px;">
+      <span style="font-size: 14px; font-weight: 600;">Dr. V. K. Sharma (Senior Agronomist)</span>
+      <span class="badge badge-success">Online</span>
+    </div>
+  </header>
+
+  <div class="portal-container">
+    <!-- Stats Banner -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div style="font-size: 13px; font-weight: 600; color: #707a6c;">TOTAL REQUESTS</div>
+        <div class="stat-number" id="statTotal">0</div>
+      </div>
+      <div class="stat-card">
+        <div style="font-size: 13px; font-weight: 600; color: #707a6c;">PENDING REVIEW</div>
+        <div class="stat-number" style="color: #d97706;" id="statPending">0</div>
+      </div>
+      <div class="stat-card">
+        <div style="font-size: 13px; font-weight: 600; color: #707a6c;">IN REVIEW</div>
+        <div class="stat-number" style="color: #2563eb;" id="statInReview">0</div>
+      </div>
+      <div class="stat-card">
+        <div style="font-size: 13px; font-weight: 600; color: #707a6c;">RESOLVED</div>
+        <div class="stat-number" style="color: #0d631b;" id="statResolved">0</div>
+      </div>
+    </div>
+
+    <!-- Main Workspace -->
+    <div class="main-grid">
+      <!-- Requests List Panel -->
+      <div class="request-list-card">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+          <h3 style="font-size: 18px; font-weight: 700;">Incoming Requests</h3>
+          <button onclick="loadExpertRequests()" class="icon-btn" title="Refresh">
+            <span class="material-symbols-outlined">refresh</span>
+          </button>
+        </div>
+
+        <div class="filter-tabs">
+          <button class="filter-btn active" onclick="filterRequests('All', this)">All</button>
+          <button class="filter-btn" onclick="filterRequests('Pending', this)">Pending</button>
+          <button class="filter-btn" onclick="filterRequests('In Review', this)">In Review</button>
+          <button class="filter-btn" onclick="filterRequests('Resolved', this)">Resolved</button>
+        </div>
+
+        <div id="requestsListContainer">
+          <!-- Request items rendered dynamically -->
+        </div>
+      </div>
+
+      <!-- Request Detail & Action Panel -->
+      <div class="detail-card" id="detailPanel">
+        <div style="text-align: center; padding: 40px; color: #707a6c;">
+          <span class="material-symbols-outlined" style="font-size: 48px; margin-bottom: 12px;">touch_app</span>
+          <p>Select a farmer request from the left list to review details and submit an expert response.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="expert.js"></script>
+</body>
+</html>
